@@ -17,12 +17,12 @@ const Home = () => {
           <TitleXL>hey, I'm <wbr /> <TextGradient>Gary</TextGradient></TitleXL>
           <TitleM>web developer</TitleM>
         </Titles>
-        <ImageWrapper> <ProfileImage src={profilePhoto} /> </ImageWrapper>
+        <Buttons>
+          <MulticolorButton>see my projects</MulticolorButton>
+          <BWButton>contact me</BWButton>
+        </Buttons>
       </Info>
-      <Buttons>
-        <MulticolorButton>see my projects</MulticolorButton>
-        <BWButton>contact me</BWButton>
-      </Buttons>
+        <ImageWrapper> <ProfileImage src={profilePhoto} /> </ImageWrapper>
       <BlurredGradient />
       <Scroll>scroll <Arrow /></Scroll>
     </HomeContainer>

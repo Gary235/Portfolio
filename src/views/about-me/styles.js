@@ -36,6 +36,11 @@ export const Text = styled.p`
     font-size: 1rem;
     padding: 0 4.5rem;
   }
+
+  @media screen and (max-width: 1350px) {
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 export const ImagesGrid = styled.div`
@@ -45,6 +50,8 @@ export const ImagesGrid = styled.div`
 
   @media screen and (max-width: 1350px) {
     place-content: center;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: 4rem 4rem;
   }
 `;
 
@@ -55,6 +62,11 @@ export const PshImage = styled.img`
 
   transform: rotate(11deg);
   justify-self: center;
+
+  @media screen and (max-width: 1350px) {
+    width: 10rem;
+    height: 4rem;
+  }
 `;
 
 export const UtnImage = styled.img`
@@ -65,4 +77,9 @@ export const UtnImage = styled.img`
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   transform: rotate(-9deg);
+
+  @media screen and (max-width: 1350px) {
+    width: 10rem;
+    height: 4rem;
+  }
 `;

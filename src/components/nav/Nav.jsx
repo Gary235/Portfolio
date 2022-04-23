@@ -47,7 +47,7 @@ const Nav = () => {
         <NavList>
           <NavListItem text="home" url="#home" />
           <NavListItem text="about me" url="#aboutme" />
-          <NavListItem text="my projects" url="#home" />
+          <NavListItem text="my projects" url="#myprojects" />
           <NavListItem text="contact me" url="#home" />
         </NavList>
       </NavBar>

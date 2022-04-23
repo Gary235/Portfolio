@@ -5,31 +5,22 @@ export const HomeContainer = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 13.75rem 4.875rem 0 8.2rem;
+  padding: 17rem 4.875rem 0 8.2rem;
   position: relative;
-
+  
   @media screen and (max-width: 1024px) {
     padding: 10rem 3rem;
     gap: 3rem;
-  }
-
-  @media screen and (max-width: 700px) {
-    padding: 3.125rem 1.25rem;
-    gap: 3rem;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `;
 
 export const Info = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 4rem;
-  justify-content: space-between;
-  align-items: center;
-
-  @media screen and (max-width: 1024px) {
-    flex-direction: column-reverse;
-  }
 `;
 
 export const Titles = styled.div`

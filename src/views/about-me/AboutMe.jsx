@@ -26,7 +26,7 @@ const AboutMe = () => {
           <UtnImage src={utn} />
         </ImagesGrid>
       </Description>
-      <BlurredGradient />
+      {/* <BlurredGradient /> */}
     </AboutMeContainer>
   )
 }

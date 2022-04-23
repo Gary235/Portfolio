@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MyProjectsContainer = styled.div`
-  height: calc(100vh - 6rem);
+  height: 800px;
   width: 100%;
 
   display: flex;
@@ -9,7 +9,8 @@ export const MyProjectsContainer = styled.div`
   gap: 5rem;
   padding: 12rem 4.875rem 0 8.2rem;
   
-  position: relative;
+  position: sticky;
+  top: 0;
 
   @media screen and (max-width: 1350px) {
     align-items: center;
