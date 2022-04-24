@@ -5,38 +5,41 @@ export const HomeContainer = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  padding: 17rem 4.875rem 0 8.2rem;
   position: relative;
-  
-  @media screen and (max-width: 1024px) {
-    padding: 10rem 3rem;
-    gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1350px) {
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
 `;
 
 export const Info = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @media screen and (max-width: 1350px) {
+    gap: 2rem;
+  }
 `;
 
 export const Titles = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1350px) {
     align-items: center;
-    gap: 1.5rem;
   }
 `;
 
 export const ImageWrapper = styled.picture`
   position: relative;
-  width: 24rem;
-  height: 24rem;
+  width: 20rem;
+  height: 20rem;
 
   &::before {
     content: '';
@@ -45,18 +48,21 @@ export const ImageWrapper = styled.picture`
     height: 115%;
     border-radius: 100%;
 
-    background: linear-gradient(125deg, #FF5DAD00, #FF71AB75, #FFE1A275, #FFF0A000);
-    opacity: 0.17;
+    background: linear-gradient(125deg, #FF71AB 20%, #FF5DAD00, #FFF0A000, #FFE1A2 80%);
+    background-repeat: no-repeat;
+    opacity: 0.15;
 
     position: absolute;
     left: 50%;
     top: 50%;
 
-    margin-top: calc(-12rem - 7.5%);
-    margin-left: calc(-12rem - 7.5%);
+    margin-top: calc(-10rem - 7.5%);
+    margin-left: calc(-10rem - 7.5%);
+
+    animation: rotate cubic-bezier(.43,.71,.76,.94) 10s infinite;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1350px) {
     width: 12rem;
     height: 12rem;
 
@@ -68,11 +74,11 @@ export const ImageWrapper = styled.picture`
 `;
 
 export const ProfileImage = styled.img`
-  width: 24rem;
-  height: 24rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1350px) {
     width: 12rem;
     height: 12rem;
   }
@@ -82,14 +88,14 @@ export const Buttons = styled.div`
   display: flex;
   gap: 2.5rem;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1350px) {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 `;
 
-export const Scroll = styled.span`
+export const Scroll = styled.a`
   width: 10rem;
 
   position: absolute;
@@ -103,8 +109,14 @@ export const Scroll = styled.span`
   gap: 0.5rem;
 
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
+  text-decoration: none;
+  user-select: none;
+
+  @media screen and (max-width: 1350px) {
+    display: none;
+  }
 `;
 
 export const Arrow = styled(ArrowSVG)`

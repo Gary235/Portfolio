@@ -11,7 +11,7 @@ const Project = (props) =>{
         <TitleM><TextGradient>{title}</TextGradient></TitleM>
         <p style={{color: 'white'}}>{description}</p>
       </div>
-      <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat' , width: '50%', height: '100%', backgroundSize: 'contain', transition: 'all 1s'}} />
+      <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat' , width: '400px', height: '600px', backgroundSize: 'cover', transition: 'all 1s'}} />
     </div>
   )
 }

@@ -9,8 +9,9 @@ export const MyProjectsContainer = styled.div`
   gap: 5rem;
   padding: 12rem 4.875rem 0 8.2rem;
   
-  position: sticky;
   top: 0;
+  position: sticky;
+  transition: top 1s;
 
   @media screen and (max-width: 1350px) {
     align-items: center;

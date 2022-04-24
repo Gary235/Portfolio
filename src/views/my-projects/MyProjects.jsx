@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 import TextGradient from "../../components/text-gradient/TextGradient"
 import { TitleL } from "../../styled-components/titles"
@@ -28,26 +28,34 @@ const PROJECTS = [
 ]
 
 const MyProjects = () => {
-  const [project, setProject] = useState(PROJECTS[0])
+  // const [project, setProject] = useState(PROJECTS[0])
+  // const [top, setTop] = useState(0)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const y = window.scrollY;
 
-      const shouldSetProject1 = y > 1800 && y <= 2250;
-      const shouldSetProject2 = y > 2250 && y <= 2650;
-      const shouldSetProject3 = y > 2650;
-  
-      if (shouldSetProject1) setProject(PROJECTS[0]);
-      if (shouldSetProject2) setProject(PROJECTS[1]);
-      if (shouldSetProject3) setProject(PROJECTS[2]);
-    }
+  //     if (y <= 3100 && top !== 0) setTop(0)
+  //     if (y > 3100 && top !== -700) setTop(-700)
 
-    window.addEventListener('scroll', handleScroll);
-  }, [])
+  //     // if (y <= 1800 || y >= 3100) return;
+
+  //     const shouldSetProject1 = y > 1800 && y <= 2250 && project.name !== PROJECTS[0].name;
+  //     const shouldSetProject2 = y > 2250 && y <= 2650 && project.name !== PROJECTS[1].name;
+  //     const shouldSetProject3 = y > 2650 && project.name !== PROJECTS[2].name;
+
+  //     if (shouldSetProject1) setProject(PROJECTS[0]);
+  //     if (shouldSetProject2) setProject(PROJECTS[1]);
+  //     if (shouldSetProject3) setProject(PROJECTS[2]);
+  //     console.log(y)
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll);
+  // }, [])
+  const project = PROJECTS[0]
 
   return (
-    <MyProjectsContainer id="myprojects">
+    <MyProjectsContainer id="myprojects" style={{top: `${top}px`}}>
       <TitleL>my <TextGradient>projects</TextGradient></TitleL>
 
       <Project title={project.name} description={project.description} image={project.image} />

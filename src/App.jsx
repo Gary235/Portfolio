@@ -4,22 +4,19 @@ import MyProjects from "./views/my-projects/MyProjects"
 
 import Nav from "./components/nav/Nav"
 
+import { AppLayout } from "./styled-components/app-layout"
+
 const App = () => {
 
   return (
-    <>
+    <AppLayout>
       <Nav />
       <Home />
       <AboutMe />
-      <MyProjects />
-      <div style={{height: '600px', width: '100%'}} />
-      <div style={{height: '600px', width: '100%'}} />
-      <div style={{height: '100vh', width: '100%', color: 'white', background: '#000', position: 'sticky', top: '0'}}>
-        hola
-      </div>
+      {/* <MyProjects /> */}
       {/* <Contact />
       <Footer /> */}
-    </>
+    </AppLayout>
   )
 }
 

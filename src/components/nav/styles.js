@@ -1,19 +1,26 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.header`
-  width: 100%;
-  height: 6rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 
-  background: #E5E5E550;
-  backdrop-filter: blur(1rem);
   position: fixed;
+  top: 2rem;
   z-index: 50;
+
+  @media screen and (max-width: 1350px) {
+    width: 90%;
+  }
 `;
 
 export const NavBar = styled.nav`
-  width: 100%;
+  width: fit-content;
   height: 100%;
-  padding: 0 4.875rem 0 8.2rem;
+  padding: 1.75rem 2rem;
+  background: #99999950;
+  backdrop-filter: blur(1rem);
+  border-radius: 0.75rem;
 
   display: flex;
   justify-content: end;
@@ -22,4 +29,6 @@ export const NavBar = styled.nav`
 
 export const NavList = styled.ul`
   list-style: none;
+  display: flex;
+  gap: 2rem;
 `;

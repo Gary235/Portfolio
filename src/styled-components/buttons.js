@@ -23,8 +23,9 @@ export const MulticolorButton = styled.button`
     color: #ffffff;
   }
 
-  @media screen and (max-width: 1024px) {
-    padding: 0.8rem 2.5rem;
+  @media screen and (max-width: 1350px) {
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
 
     &:hover {
       background-position: 0;
@@ -58,7 +59,7 @@ export const BWButton = styled.button`
     color: #000000;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1350px) {
     &:hover {
       background-position: 164px 0;
       color: #FFFFFF;

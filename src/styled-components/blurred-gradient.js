@@ -12,4 +12,8 @@ export const BlurredGradient = styled.div`
   background: linear-gradient(100deg, #FF42BF 20%, #FFF84B 85%);
   filter: blur(3.5rem) brightness(1.2);
   border-radius: 2.75rem;
+
+  @media screen and (max-width: 1350px) {
+    display: none;
+  }
 `;

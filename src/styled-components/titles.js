@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const TitleXL = styled.h1`
   width: fit-content;
 
-  font-size: clamp(2.25rem, 10vw, 6.5rem);
+  font-size: clamp(2.25rem, 10vw, 5rem);
   line-height: 1.5;
   font-weight: 700;
   color: white;
