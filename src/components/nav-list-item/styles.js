@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Item = styled.li`
   display: inline;
+  user-select: none;
 `;
 
 export const ItemLink = styled.a`

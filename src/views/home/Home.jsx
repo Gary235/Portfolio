@@ -22,7 +22,7 @@ const Home = () => {
           <BWButton>contact me</BWButton>
         </Buttons>
       </Info>
-      <ImageWrapper> <ProfileImage src={profilePhoto} /></ImageWrapper>
+      <ImageWrapper> <ProfileImage src={profilePhoto} id="profile-image" /></ImageWrapper>
       <BlurredGradient />
       <Scroll href="#aboutme">scroll<Arrow /></Scroll>
     </HomeContainer>

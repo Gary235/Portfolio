@@ -1,8 +1,10 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
+import useDeviceSize from "../../hooks/useDeviceSize"
 
 import NavListItem from "../nav-list-item/NavListItem"
-import { NavBar, NavContainer, NavList, } from "./styles"
+import { Image, MenuIcon, NavBar, NavContainer, NavList, } from "./styles"
 
+import profilePhoto from '../../assets/profile.jpg'
 
 const INITIAL_NAV_ITEMS = [
   { section: 'home', active: true },
@@ -12,43 +14,37 @@ const INITIAL_NAV_ITEMS = [
 ]
 
 const Nav = () => {
-  // const [navItems, setNavItems] = useState(INITIAL_NAV_ITEMS);
-  // const homeRef = useRef(null);
-  // const aboutRef = useRef(null);
-  // const projectsRef = useRef(null);
-  // const contactRef = useRef(null);
+  const [showMobileNavList, setShowMobileNavList] = useState(false)
+  const [isProfileImageIntersecting, setIsProfileImageIntersecting] = useState(true)
+  const size = useDeviceSize()
 
-  // const refs = [homeRef, aboutRef, projectsRef, contactRef];
+  useEffect(() => {
+    const profileImageEl = document.querySelector('#profile-image')
+    const profileImageElObserver = new IntersectionObserver(([entry]) => { setIsProfileImageIntersecting(entry.isIntersecting) })
 
-  // useEffect(() => {
-  //   navItems.map((item, i) => {
-  //     if (!item.active) return;
-
-  //     refs[i].current.active = true;
-  //   })
-  // }, [navItems])
+    if(profileImageEl) profileImageElObserver.observe(profileImageEl)
   
+    return function() {
+      if(profileImageEl) profileImageElObserver.unobserve(profileImageEl)
+    }
+  }, [])
 
-  // const observerCallback = (entries, observer) => {
-  //   console.log({entries})
-  // }
-  // const observerOptions = {
-  //   rootMargin: '0px',
-  //   threshold: 1.0
-  // }
-  // const observer = new IntersectionObserver(observerCallback, observerOptions);
-  
-  // // const el =document.querySelector('#aboutme')
-  // observer.observe(el)
+  const shouldShowMenuIcon = size.width < 700
+  const toggleMobileNavList = () => setShowMobileNavList(!showMobileNavList)
 
+  if (!shouldShowMenuIcon && showMobileNavList) setShowMobileNavList(false)
+
+  console.log({isProfileImageIntersecting})
   return (
     <NavContainer>
-      <NavBar>
+      <MenuIcon show={shouldShowMenuIcon} onClick={toggleMobileNavList} />
+      <NavBar show={!shouldShowMenuIcon || showMobileNavList}>
         <NavList>
-          <NavListItem text="home" url="#home" />
-          <NavListItem text="about me" url="#aboutme" />
-          <NavListItem text="my projects" url="#myprojects" />
-          <NavListItem text="contact me" url="#home" />
+          <Image src={profilePhoto} show={!isProfileImageIntersecting} />
+          <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
+          <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
+          <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />
+          <NavListItem text="contact me" url="#home" clickHandler={toggleMobileNavList} />
         </NavList>
       </NavBar>
     </NavContainer>
