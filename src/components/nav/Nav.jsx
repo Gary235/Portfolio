@@ -10,7 +10,7 @@ const INITIAL_NAV_ITEMS = [
   { section: 'home', active: true },
   { section: 'aboutme', active: false },
   { section: 'myprojects', active: false },
-  { section: 'contactme', active: false }
+  { section: 'contact', active: false }
 ]
 
 const Nav = () => {
@@ -40,11 +40,11 @@ const Nav = () => {
       <MenuIcon show={shouldShowMenuIcon} onClick={toggleMobileNavList} />
       <NavBar show={!shouldShowMenuIcon || showMobileNavList}>
         <NavList>
-          <Image src={profilePhoto} show={!isProfileImageIntersecting} />
+          <Image src={profilePhoto} show={!isProfileImageIntersecting} loading="lazy" />
           <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
           <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
           <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />
-          <NavListItem text="contact me" url="#home" clickHandler={toggleMobileNavList} />
+          <NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} />
         </NavList>
       </NavBar>
     </NavContainer>

@@ -1,6 +1,7 @@
 import Home from "./views/home/Home"
 import AboutMe from "./views/about-me/AboutMe"
 import MyProjects from "./views/my-projects/MyProjects"
+import Contact from "./views/contact/Contact"
 
 import Nav from "./components/nav/Nav"
 
@@ -13,9 +14,9 @@ const App = () => {
       <Nav />
       <Home />
       <AboutMe />
-      {/* <MyProjects /> */}
-      {/* <Contact />
-      <Footer /> */}
+      <MyProjects />
+      <Contact />
+      {/* <Footer /> */}
     </AppLayout>
   )
 }

@@ -33,3 +33,7 @@ body {
   100% { transform: rotate(359deg); }
 }
 
+@keyframes animate-stripes {
+  0% { background-position: 0 0; }
+  100% { background-position: 120px 0; }
+}

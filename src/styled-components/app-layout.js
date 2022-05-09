@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AppLayout = styled.div`
+export const AppLayout = styled.main`
   width: 100%;
   padding: 0 10% 0;
   display: flex;
@@ -9,6 +9,5 @@ export const AppLayout = styled.div`
 
   @media screen and (max-width: 1350px) {
     padding: 5rem 5% 0;
-    gap: 1.5rem;
   }
 `;

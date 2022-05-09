@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ArrowSVG from '../../components/svgs/Arrow';
 
-export const HomeContainer = styled.div`
+export const HomeContainer = styled.section`
   height: 100vh;
   width: 100%;
   display: flex;
@@ -36,7 +36,7 @@ export const Titles = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.picture`
+export const ImageWrapper = styled.figure`
   position: relative;
   width: 20rem;
   height: 20rem;

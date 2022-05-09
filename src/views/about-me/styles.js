@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutMeContainer = styled.div`
+export const AboutMeContainer = styled.section`
   width: 100%;
 
   display: flex;
@@ -21,6 +21,7 @@ export const Description = styled.div`
   @media screen and (max-width: 1350px) {
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 `;
 
@@ -42,9 +43,13 @@ export const ImagesGrid = styled.div`
   grid-template-rows:    8rem 8rem;
 
   @media screen and (max-width: 1350px) {
-    place-content: center;
-    grid-template-columns: 8rem 8rem;
-    grid-template-rows: 4rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
   }
 `;
 
@@ -53,12 +58,11 @@ export const PshImage = styled.img`
   height: 8rem;
   object-fit: cover;
 
-  /* transform: rotate(11deg); */
   justify-self: center;
 
   @media screen and (max-width: 1350px) {
-    width: 8rem;
-    height: 4rem;
+    width: 20rem;
+    height: 12rem;
   }
 `;
 
@@ -69,10 +73,9 @@ export const UtnImage = styled.img`
 
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  /* transform: rotate(-9deg); */
 
   @media screen and (max-width: 1350px) {
-    width: 8rem;
-    height: 4rem;
+    width: 20rem;
+    height: 12rem;
   }
 `;

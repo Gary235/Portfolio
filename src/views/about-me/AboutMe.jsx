@@ -22,11 +22,10 @@ const AboutMe = () => {
           Pellentesque ac neque et lacus, scelerisque. Quam ultricies arcu sed semper et. Mi purus morbi pellentesque proin ac et, a id nunc.
         </Text>
         <ImagesGrid>
-          <PshImage src={psh} />
-          <UtnImage src={utn} />
+          <PshImage src={psh} loading="lazy" />
+          <UtnImage src={utn} loading="lazy" />
         </ImagesGrid>
       </Description>
-      {/* <BlurredGradient /> */}
     </AboutMeContainer>
   )
 }

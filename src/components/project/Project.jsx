@@ -1,18 +1,22 @@
 
 import TextGradient from "../../components/text-gradient/TextGradient"
 import { TitleM } from "../../styled-components/titles"
+import { ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
 
 const Project = (props) =>{
   const {title, description, image} = props
 
   return (
-    <div style={{display: 'flex', width: '100%', height: '50vh', justifyContent: 'space-between'}}>
-      <div style={{display: 'flex', flexDirection: 'column'}}>
+    <ProjectContainer>
+      <ProjectInfo>
         <TitleM><TextGradient>{title}</TextGradient></TitleM>
         <p style={{color: 'white'}}>{description}</p>
-      </div>
-      <div style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat' , width: '400px', height: '600px', backgroundSize: 'cover', transition: 'all 1s'}} />
-    </div>
+      </ProjectInfo>
+
+      <ProjectImageWrapper image={image}>
+        <ProjectImage src={image} loading="lazy" />
+      </ProjectImageWrapper>
+    </ProjectContainer>
   )
 }
 
