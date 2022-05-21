@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import arrow from './../../assets/arrow_02.svg'
 
 export const ContactContainer = styled.section`
   background-color: #d11d95;
@@ -9,30 +10,59 @@ export const ContactContainer = styled.section`
   background-size: 120px 120px;
   background-image: linear-gradient(
       135deg,
-      #e621a4 25%,
-      transparent 25%,
-      transparent 50%,
-      #e621a4 50%,
-      #e621a4  75%,
-      transparent 75%,
+      #e621a4 25%, transparent 25%,
+      transparent 50%, #e621a4 50%,
+      #e621a4 75%, transparent 75%,
       transparent
   );
-  animation: animate-stripes 5s linear infinite;
+  animation: animate-stripes 7s linear infinite;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 5rem;
+  position: relative;
+
+  /* &::after {
+    content: '';
+    display: inline;
+    width: 100px;
+    height: 70px;
+
+    position: absolute;
+    top: 10px;
+    left: calc(10% - 80px);
+
+    background-image: url(${arrow});
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 900px) {
+      left: -2%;
+    }
+  } */
 `;
 
 export const Form = styled.form`
   width: 100%;
   display: grid;
+
+  grid-template-columns: repeat(2, 1fr) ;
   padding: 0 10%;
 
-  grid-template-areas: 'name message' 'email message' 'submit submit';
+  grid-template-areas: 'name message submit'
+                       'email message submit'
+  ;
   gap: 1rem;
+  justify-content: center;
+  z-index: 5;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: unset;
+    grid-template-areas: 'name' 'email' 'message' 'submit';
+    justify-content: unset;
+  }
 `;
 
 export const InputWrapper = styled.div`
@@ -97,25 +127,30 @@ export const TextArea = styled.textarea`
 export const Submit = styled.input`
   grid-area: submit;
   
-  margin-top: 0.5rem;
   width: fit-content;
   padding: 1rem 2rem;
-  justify-self: center;
   cursor: pointer;
-  border-radius: 0.2rem;
+  border-radius: 0.35rem;
   background: #000;
   color: #fff;
   font-weight: 600;
+  position: relative;
 
   border: none;
   outline: 3px solid transparent;
 
-  transition: background 0.2s, outline 0.2s;
+  transition:outline 0.2s, box-shadow 100ms, transform 0.2s;
 
   &:hover {
-    background: #2b2b2b;
+    box-shadow: 0 20px 25px -10px #000000A0;
+    transform: translateY(-5px);
   }
+
   &:focus {
     outline: 3px solid #00000050;
+  }
+
+  @media screen and (max-width: 900px) {
+    justify-self: center;
   }
 `
