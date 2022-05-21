@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { keyframes } from 'styled-components';
 import arrow from './../../assets/arrow_02.svg'
 
 export const ContactContainer = styled.section`
@@ -22,25 +23,6 @@ export const ContactContainer = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-
-  /* &::after {
-    content: '';
-    display: inline;
-    width: 100px;
-    height: 70px;
-
-    position: absolute;
-    top: 10px;
-    left: calc(10% - 80px);
-
-    background-image: url(${arrow});
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    @media screen and (max-width: 900px) {
-      left: -2%;
-    }
-  } */
 `;
 
 export const Form = styled.form`
@@ -123,13 +105,47 @@ export const TextArea = styled.textarea`
   }
 `
 
-export const Submit = styled.input`
+const SubmitAnimation = keyframes`
+  0%   {bottom: -100%}
+  50%  {
+    bottom: 0;
+    background-color: inherit;
+  }
+  80% {
+    bottom: 0;
+    background-color: green;
+  }
+  100% {
+    bottom: 0;
+    background-color: green;
+  }
+`
+
+export const SubmitWrapper = styled.div`
   grid-area: submit;
-  
   width: fit-content;
-  padding: 1rem 2rem;
+  position: relative;
   cursor: pointer;
+
+  /* &::after {
+    content: '';
+    border-radius: 0.35rem;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    left: 0;
+    bottom: -100%;
+    
+    background: #ffffff50;
+    /* animation: ${SubmitAnimation} 3s ease-out 10 backwards; */
+  } */
+`;
+
+export const Submit = styled.input`
+  width: fit-content;
+  height: 100%;
   border-radius: 0.35rem;
+  padding: 1rem 2rem;
   background: #000;
   color: #fff;
   font-weight: 600;
@@ -148,7 +164,6 @@ export const Submit = styled.input`
   &:focus {
     outline: 3px solid #00000050;
   }
-
   @media screen and (max-width: 900px) {
     justify-self: center;
   }
