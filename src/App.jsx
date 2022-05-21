@@ -1,7 +1,8 @@
-import Home from "./views/home/Home"
-import AboutMe from "./views/about-me/AboutMe"
+import Home       from "./views/home/Home"
+import AboutMe    from "./views/about-me/AboutMe"
 import MyProjects from "./views/my-projects/MyProjects"
-import Contact from "./views/contact/Contact"
+import Contact    from "./views/contact/Contact"
+import Footer     from "./views/footer/Footer"
 
 import Nav from "./components/nav/Nav"
 
@@ -16,7 +17,7 @@ const App = () => {
       <AboutMe />
       <MyProjects />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </AppLayout>
   )
 }

@@ -21,7 +21,6 @@ export const ContactContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
   position: relative;
 
   /* &::after {

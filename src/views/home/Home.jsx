@@ -18,8 +18,8 @@ const Home = () => {
           <TitleM>web developer</TitleM>
         </Titles>
         <Buttons>
-          <MulticolorButton>see my projects</MulticolorButton>
-          <BWButton>contact me</BWButton>
+          <MulticolorButton onClick={() => {document.getElementById("myprojects").scrollIntoView()} }>see my projects</MulticolorButton>
+          <BWButton onClick={() => document.getElementById("contact").scrollIntoView() }>contact me</BWButton>
         </Buttons>
       </Info>
       <ImageWrapper> <ProfileImage src={profilePhoto} id="profile-image" loading="lazy" /></ImageWrapper>
