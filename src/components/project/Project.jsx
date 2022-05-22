@@ -1,7 +1,7 @@
 
 import TextGradient from "../../components/text-gradient/TextGradient"
 import { TitleM } from "../../styled-components/titles"
-import { ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
+import { ProjectBody, ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
 
 const Project = (props) =>{
   const {title, description, image} = props
@@ -10,7 +10,7 @@ const Project = (props) =>{
     <ProjectContainer>
       <ProjectInfo>
         <TitleM><TextGradient>{title}</TextGradient></TitleM>
-        <p style={{color: 'white'}}>{description}</p>
+        <ProjectBody>{description}</ProjectBody>
       </ProjectInfo>
 
       <ProjectImageWrapper image={image}>
