@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import useDeviceSize from "../../hooks/useDeviceSize"
 
 import NavListItem from "../nav-list-item/NavListItem"
-import { Image, MenuIcon, NavBar, NavContainer, NavList, } from "./styles"
+import { Image, MenuToggle, NavBar, NavContainer, NavList, } from "./styles"
 
 import profilePhoto from '../../assets/profile.jpg'
 
@@ -34,19 +34,22 @@ const Nav = () => {
 
   if (!shouldShowMenuIcon && showMobileNavList) setShowMobileNavList(false)
 
-  console.log({isProfileImageIntersecting})
   return (
     <NavContainer>
-      <MenuIcon show={shouldShowMenuIcon} onClick={toggleMobileNavList} />
-      <NavBar show={!shouldShowMenuIcon || showMobileNavList}>
-        <NavList>
-          <Image src={profilePhoto} show={!isProfileImageIntersecting} loading="lazy" />
-          <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
-          <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
-          <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />
-          <NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} />
-        </NavList>
-      </NavBar>
+      {shouldShowMenuIcon && (
+        <MenuToggle onClick={toggleMobileNavList}>menu</MenuToggle>
+      )}
+      {(!shouldShowMenuIcon || showMobileNavList) && (
+        <NavBar>
+          <NavList>
+            {!isProfileImageIntersecting && <Image src={profilePhoto} loading="lazy" />}
+            <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
+            <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
+            <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />
+            <NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} />
+          </NavList>
+        </NavBar>
+      )}
     </NavContainer>
   )
 }
