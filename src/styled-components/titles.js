@@ -4,7 +4,7 @@ export const TitleXL = styled.h1`
   width: fit-content;
 
   font-size: clamp(2.25rem, 10vw, 5rem);
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 700;
   color: white;
   position: relative;
@@ -60,7 +60,7 @@ export const TitleL = styled.h2`
 
 export const TitleM = styled.h3`
   width: fit-content;
-  font-size: clamp(1rem, 6vw, 1.75rem);
+  font-size: clamp(0.75rem, 6vw, 1.35rem);
   line-height: 2;
   font-weight: 600;
   color: white;
@@ -68,7 +68,7 @@ export const TitleM = styled.h3`
 
   &::before, &::after {
     position: absolute;
-    top: 1rem;
+    top: 0.6rem;
 
     font-family: monospace, 'Poppins', sans-serif;
     font-weight: 400;

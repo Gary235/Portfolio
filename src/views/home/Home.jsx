@@ -14,8 +14,9 @@ const Home = () => {
     <HomeContainer id="home">
       <Info>
         <Titles>
-          <TitleXL>hey, I'm <wbr /> <TextGradient>Gary</TextGradient></TitleXL>
-          <TitleM>web developer</TitleM>
+          <p style={{color: '#ccc73b', fontFamily:'monospace', marginBottom: '0.75rem', fontSize: '0.85rem'}}>hey there 👋</p>
+          <TitleXL>I'm <wbr /> <TextGradient>Gary</TextGradient></TitleXL>
+          <TitleM style={{marginTop: '0.5rem'}}>I create web experiences</TitleM>
         </Titles>
         <Buttons>
           <MulticolorButton onClick={() => {document.getElementById("myprojects").scrollIntoView()} }>see my projects</MulticolorButton>
