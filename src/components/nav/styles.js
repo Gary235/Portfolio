@@ -59,7 +59,7 @@ export const MenuToggle = styled.button`
   color: #ffffff;
   border-radius: 0.3rem;
   border: none;
-  /* font-weight: 600; */
+  backdrop-filter: blur(1rem);
 `
 
 export const Image = styled.img`
