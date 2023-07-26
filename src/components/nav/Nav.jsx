@@ -22,10 +22,10 @@ const Nav = () => {
     const profileImageEl = document.querySelector('#profile-image')
     const profileImageElObserver = new IntersectionObserver(([entry]) => { setIsProfileImageIntersecting(entry.isIntersecting) })
 
-    if(profileImageEl) profileImageElObserver.observe(profileImageEl)
-  
+    if (profileImageEl) profileImageElObserver.observe(profileImageEl);
+
     return function() {
-      if(profileImageEl) profileImageElObserver.unobserve(profileImageEl)
+      if (profileImageEl) profileImageElObserver.unobserve(profileImageEl);
     }
   }, [])
 
@@ -42,7 +42,7 @@ const Nav = () => {
       {(!shouldShowMenuIcon || showMobileNavList) && (
         <NavBar>
           <NavList>
-            {!isProfileImageIntersecting && <Image src={profilePhoto} loading="lazy" />}
+            <Image src={profilePhoto} loading="lazy" show={!isProfileImageIntersecting} />
             <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
             <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
             <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />

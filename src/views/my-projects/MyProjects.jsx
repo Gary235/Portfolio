@@ -13,19 +13,19 @@ import image3 from '../../assets/cccc.jpg'
 const PROJECTS = [
   {
     id: '001',
-    name: 'project 1',
+    title: 'project 1',
     description: 'aaaaaaaaaaaaaa aa aa a',
     image: image1
   },
   {
     id: '002',
-    name: 'project 2',
+    title: 'project 2',
     description: 'sssssssssssss sss s ',
     image: image2
   },
   {
     id: '003',
-    name: 'project 3',
+    title: 'project 3',
     description: 'vvvvvv vvvvvvvvvvvv cvcv',
     image: image3
   }
@@ -34,7 +34,7 @@ const PROJECTS = [
 const MyProjects = () => {
 
   const renderProjects = projects =>  projects.map(
-    ({id, name, description, image}) => <Project key={id} title={name} description={description} image={image} />
+    (project, position) => <Project key={project.id} {...project} position={position} />
   )
 
   return (

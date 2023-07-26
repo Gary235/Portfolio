@@ -7,6 +7,7 @@ export const ContactContainer = styled.section`
   height: fit-content;
   padding: 2rem 0;
   width: 100%;
+  min-width: 320px;
   border-radius: 5px;
   background-size: 120px 120px;
   background-image: linear-gradient(
@@ -49,7 +50,7 @@ export const Form = styled.form`
 export const InputWrapper = styled.div`
   position: relative;
   width: 100%;
-  
+
   height: ${({label}) => label === "'message'" ? '7.8rem' : '3.4rem'};
   grid-area: ${({label}) => label.slice(1, label.length - 1)};
 
@@ -62,9 +63,9 @@ export const InputWrapper = styled.div`
     left: 0.75rem;
     z-index: 20;
     color: #8b8b8b;
-    
+
     transition: top 0.2s;
-    
+
     font-size: ${({showInsideInput}) => showInsideInput ? '14px' : '11px'};
     top: ${({showInsideInput}) => showInsideInput ? '1rem' : '2px'};
   }
@@ -83,6 +84,10 @@ export const TextInput = styled.input`
 
   &:focus {
     outline: 3px solid #ffffff50;
+  }
+
+  &:disabled {
+    background-color: #bcbcbc;
   }
 `;
 
@@ -103,21 +108,9 @@ export const TextArea = styled.textarea`
   &:focus {
     outline: 3px solid #ffffff50;
   }
-`
 
-const SubmitAnimation = keyframes`
-  0%   {bottom: -100%}
-  50%  {
-    bottom: 0;
-    background-color: inherit;
-  }
-  80% {
-    bottom: 0;
-    background-color: green;
-  }
-  100% {
-    bottom: 0;
-    background-color: green;
+  &:disabled {
+    background-color: #bcbcbc;
   }
 `
 
@@ -127,34 +120,29 @@ export const SubmitWrapper = styled.div`
   position: relative;
   cursor: pointer;
 
-  /* &::after {
-    content: '';
-    border-radius: 0.35rem;
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    left: 0;
-    bottom: -100%;
-    
-    background: #ffffff50;
-    /* animation: ${SubmitAnimation} 3s ease-out 10 backwards; */
-  } */
+  @media screen and (max-width: 900px) {
+    justify-self: center;
+  }
 `;
 
 export const Submit = styled.input`
-  width: fit-content;
+  width: 100px;
   height: 100%;
   border-radius: 0.35rem;
-  padding: 1rem 2rem;
-  background: #000;
   color: #fff;
   font-weight: 600;
   position: relative;
+  cursor: pointer;
 
   border: none;
   outline: 3px solid transparent;
 
-  transition:outline 0.2s, box-shadow 100ms, transform 0.2s;
+  transition: outline 0.2s, box-shadow 100ms, transform 0.2s;
+
+  background-color: black;
+  background-position: 0 125px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, #3ad154 100%, black 100%);
 
   &:hover {
     box-shadow: 0 20px 25px -10px #000000A0;
@@ -164,7 +152,8 @@ export const Submit = styled.input`
   &:focus {
     outline: 3px solid #00000050;
   }
+
   @media screen and (max-width: 900px) {
-    justify-self: center;
+    padding: 1rem 3rem;
   }
 `

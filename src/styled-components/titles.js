@@ -53,7 +53,7 @@ export const TitleL = styled.h2`
     left: -3rem;
   }
   &::after {
-    content: '</ h2>';
+    content: '</h2>';
     right: -4rem;
   }
 `;
@@ -81,7 +81,7 @@ export const TitleM = styled.h3`
     left: -3rem;
   }
   &::after {
-    content: '</ h3>';
+    content: '</h3>';
     right: -4rem;
   }
 `;

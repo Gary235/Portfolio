@@ -4,15 +4,16 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  scroll-padding: 4rem;
 }
 
 ::selection {
   -webkit-text-fill-color: #000;
-  background: #FF42BF;
+  background: #FFF84B;
 }
 
 body {
-  background-color: #000000;
+  background-color: #11050d;
 }
 
 .text-gradient {
@@ -23,9 +24,17 @@ body {
   text-fill-color: transparent;
 }
 
+.submitting {
+  animation: submit 1s ease-in-out 1 forwards;
+}
+
+.submitted {
+  animation: finish-submit 400ms ease-in-out 1 backwards;
+}
+
 @keyframes updown {
   0% { bottom: 0 }
-  100% { bottom: -1rem }
+  100% { bottom: -2rem }
 }
 
 @keyframes rotate {
@@ -36,4 +45,30 @@ body {
 @keyframes animate-stripes {
   0% { background-position: 0 0; }
   100% { background-position: 120px 0; }
+}
+
+@keyframes submit {
+  0% { background-position: 0 125px; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes finish-submit {
+  0% {
+    background-color: #3ad154;
+    background-image: none;
+    box-shadow: 0 0 0 0 #47ed63;
+  }
+  50% {
+    background-color: #3ad154;
+    background-image: none;
+    box-shadow: 0 0 55px 0 #47ed63;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #47ed63;
+
+    background-color: black;
+    background-position: 0 125px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #3ad154 100%, black 100%);
+  }
 }

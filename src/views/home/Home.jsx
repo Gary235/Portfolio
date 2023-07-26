@@ -10,6 +10,8 @@ import profilePhoto from '../../assets/profile.jpg'
 
 const Home = () => {
 
+  const goTo = (id) => document.getElementById(id).scrollIntoView()
+
   return (
     <HomeContainer id="home">
       <Info>
@@ -19,13 +21,13 @@ const Home = () => {
           <TitleM style={{marginTop: '0.5rem'}}>I create web experiences</TitleM>
         </Titles>
         <Buttons>
-          <MulticolorButton onClick={() => {document.getElementById("myprojects").scrollIntoView()} }>see my projects</MulticolorButton>
-          <BWButton onClick={() => document.getElementById("contact").scrollIntoView() }>contact me</BWButton>
+          <MulticolorButton onClick={() => goTo("myprojects") }>see my projects</MulticolorButton>
+          <BWButton onClick={() => goTo("contact") }>contact me</BWButton>
         </Buttons>
       </Info>
       <ImageWrapper> <ProfileImage src={profilePhoto} id="profile-image" loading="lazy" /></ImageWrapper>
-      <BlurredGradient />
-      <Scroll href="#aboutme">scroll<Arrow /></Scroll>
+      {/* <BlurredGradient /> */}
+      <Scroll><Arrow /></Scroll>
     </HomeContainer>
   )
 }

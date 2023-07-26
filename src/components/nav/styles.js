@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 
 export const NavContainer = styled.header`
-  width: 80%;
+  width: 650px;
   display: flex;
   justify-content: center;
 
   position: fixed;
   top: 2rem;
+  left: calc(50% - 325px);
   z-index: 50;
 
-  @media screen and (max-width: 1350px) {
-    width: 90%;
-  }
-  
   @media screen and (max-width: 700px) {
     flex-direction: column;
     align-items: center;
@@ -26,7 +23,7 @@ export const NavBar = styled.nav`
   width: fit-content;
   height: 100%;
   padding: 1.75rem 2rem;
-  background: #99999950;
+  background: #11050d50;
   backdrop-filter: blur(1rem);
   border-radius: 0.35rem;
 
@@ -46,7 +43,6 @@ export const NavList = styled.ul`
   gap: 2rem;
   align-items: center;
 
-
   @media screen and (max-width: 700px) {
     flex-direction: column;
     gap: 3rem;
@@ -55,7 +51,7 @@ export const NavList = styled.ul`
 
 export const MenuToggle = styled.button`
   padding: 1rem;
-  background-color: #99999950;
+  background-color: #11050d50;
   color: #ffffff;
   border-radius: 0.3rem;
   border: none;
@@ -63,7 +59,9 @@ export const MenuToggle = styled.button`
 `
 
 export const Image = styled.img`
+  display: ${({show}) => show ? 'inline' : 'none'};
+
   width: 3rem;
   height: 3rem;
-  border-radius: 3rem;
+  border-radius: 4px;
 `

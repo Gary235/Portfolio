@@ -12,7 +12,7 @@ export const ProjectContainer = styled.article`
     flex-direction: row-reverse;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     justify-content: center;
     gap: 0;
   }
@@ -21,18 +21,15 @@ export const ProjectContainer = styled.article`
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: ${({toTheLeft}) => toTheLeft ? 'flex-start' : 'flex-end'};
 
-  @media screen and (max-width: 1000px) {
-    justify-content: center;
+  @media screen and (max-width: 1200px) {
+    display: none;
   }
 `;
 
 export const ProjectBody = styled.p`
   color: #ffffff;
-
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
 `
 
 
@@ -40,6 +37,8 @@ export const ProjectImageWrapper = styled.figure`
   height: 100%;
   width: fit-content;
   position: relative;
+  min-width: 320px;
+  max-width: 900px;
 
   &::before {
     content: '';
@@ -55,7 +54,7 @@ export const ProjectImageWrapper = styled.figure`
     opacity: 0.4;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
 
     &::before {
@@ -70,9 +69,8 @@ export const ProjectImage = styled.img`
   object-fit: cover;
   border-radius: 0.25rem;
 
-  @media screen and (max-width: 1000px) {
-    height: 80%;
+
+  @media screen and (max-width: 1200px) {
     width: 100%;
-    aspect-ratio: unset;
   }
 `

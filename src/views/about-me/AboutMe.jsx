@@ -2,7 +2,6 @@ import psh from '../../assets/psh.png'
 import utn from '../../assets/utn.png'
 
 import TextGradient from '../../components/text-gradient/TextGradient'
-import { BlurredGradient } from '../../styled-components/blurred-gradient'
 import { TitleL } from "../../styled-components/titles"
 
 import { AboutMeContainer, Description, ImagesGrid, PshImage, Text, UtnImage} from "./styles"

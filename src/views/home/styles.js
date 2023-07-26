@@ -86,7 +86,7 @@ export const ProfileImage = styled.img`
 
 export const Buttons = styled.div`
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 
   @media screen and (max-width: 1350px) {
     flex-direction: column;
@@ -95,24 +95,10 @@ export const Buttons = styled.div`
   }
 `;
 
-export const Scroll = styled.a`
-  width: 10rem;
-
+export const Scroll = styled.span`
   position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  margin-left: -5rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-
-  color: #000000;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  user-select: none;
+  bottom: 3rem;
+  left: calc(50% - 8px);
 
   @media screen and (max-width: 1350px) {
     display: none;
@@ -122,5 +108,5 @@ export const Scroll = styled.a`
 export const Arrow = styled(ArrowSVG)`
   position: relative;
 
-  animation: updown 800ms ease-in-out infinite alternate;
+  animation: updown 1s ease-in-out infinite alternate;
 `;
