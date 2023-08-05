@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import { keyframes } from 'styled-components';
-import arrow from './../../assets/arrow_02.svg'
 
 export const ContactContainer = styled.section`
   background-color: #d11d95;
@@ -89,6 +87,12 @@ export const TextInput = styled.input`
   &:disabled {
     background-color: #bcbcbc;
   }
+
+  ::selection {
+    -webkit-text-fill-color: #000;
+    color: #000;
+    background: #FF42BF;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -111,6 +115,12 @@ export const TextArea = styled.textarea`
 
   &:disabled {
     background-color: #bcbcbc;
+  }
+
+  ::selection {
+    -webkit-text-fill-color: #000;
+    color: #000;
+    background: #FF42BF;
   }
 `
 
@@ -154,6 +164,29 @@ export const Submit = styled.input`
   }
 
   @media screen and (max-width: 900px) {
-    padding: 1rem 3rem;
+    padding: 1rem 0;
   }
-`
+`;
+
+export const ArrowContainer = styled.div`
+  position: absolute;
+  top: -4rem;
+  right: 1rem;
+  transform: scale(0.5);
+
+  &::before {
+    content: 'send me a message :)';
+    position: absolute;
+    top: -4rem;
+    right: -10rem;
+
+    color: #ffffff;
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    bottom: -4rem;
+    right: 1rem;
+  }
+`;

@@ -1,10 +1,20 @@
-import psh from '../../assets/psh.png'
-import utn from '../../assets/utn.png'
-
 import TextGradient from '../../components/text-gradient/TextGradient'
 import { TitleL } from "../../styled-components/titles"
 
-import { AboutMeContainer, Description, ImagesGrid, PshImage, Text, UtnImage} from "./styles"
+import psh from '../../assets/psh.png'
+import utn from '../../assets/utn.png'
+
+import {
+  AboutMeContainer,
+  Description,
+  ImagesGrid,
+  PshImage,
+  Presentation,
+  UtnImage,
+  DescriptionData,
+  IconsTitle
+} from "./styles"
+import TechStack from '../../components/tech-stack/TechStack'
 
 const AboutMe = () => {
 
@@ -12,14 +22,18 @@ const AboutMe = () => {
     <AboutMeContainer id="aboutme">
       <TitleL>about <TextGradient>me</TextGradient></TitleL>
       <Description>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. At congue lectus egestas etiam eget enim sed elementum tincidunt.
-          Pellentesque ac neque et lacus, scelerisque. Quam ultricies arcu sed semper et. Mi purus morbi pellentesque proin ac et, a id nunc.
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. At congue lectus egestas etiam eget enim sed elementum tincidunt.
-          Pellentesque ac neque et lacus, scelerisque. Quam ultricies arcu sed semper et. Mi purus morbi pellentesque proin ac et, a id nunc.
-        </Text>
+        <DescriptionData>
+          <Presentation>
+            Hello! I'm Gary, an enthusiast of technology and programming.{' '}
+            I am studying Software Engineering at the National Technological University (<a href='https://utn.edu.ar/' target='_blank' className='link'>UTN</a>),{' '}
+            where I am expanding my knowledge in the world of computer science.{' '}
+            Additionally, I am honing my skills as a Web Developer at <a href='https://wearepsh.com/' target='_blank' className='link'>PSH</a>,{' '}
+            applying my creativity and passion for coding.
+          </Presentation>
+          <IconsTitle>Some tech I'm used to:</IconsTitle>
+
+          <TechStack stack={['react', 'python', 'django', 'c']} />
+        </DescriptionData>
         <ImagesGrid>
           <PshImage src={psh} loading="lazy" />
           <UtnImage src={utn} loading="lazy" />

@@ -22,6 +22,12 @@ export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${({toTheLeft}) => toTheLeft ? 'flex-start' : 'flex-end'};
+  max-width: 35%;
+  line-height: 2;
+
+  & > *:last-child {
+    margin-top: auto;
+  }
 
   @media screen and (max-width: 1200px) {
     display: none;
@@ -49,9 +55,9 @@ export const ProjectImageWrapper = styled.figure`
     right: -0.25rem;
 
     z-index: -1;
-    background-image: ${({image}) => `url(${image})`};
+    background-color: #FF42BF50;
     filter: blur(35px);
-    opacity: 0.4;
+    opacity: 0.2;
   }
 
   @media screen and (max-width: 1200px) {

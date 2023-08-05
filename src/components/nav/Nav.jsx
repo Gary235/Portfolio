@@ -43,10 +43,10 @@ const Nav = () => {
         <NavBar>
           <NavList>
             <Image src={profilePhoto} loading="lazy" show={!isProfileImageIntersecting} />
-            <NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} />
-            <NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} />
-            <NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} />
-            <NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} />
+            <span className="link"><NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} /></span>
+            <span className="link"><NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} /></span>
+            <span className="link"><NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} /></span>
+            <span className="link"><NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} /></span>
           </NavList>
         </NavBar>
       )}

@@ -1,7 +1,18 @@
 import { useState, useRef } from "react"
 import emailjs from '@emailjs/browser';
 
-import { ContactContainer, Form, InputWrapper, Submit, SubmitWrapper, TextArea, TextInput } from "./styles"
+import handDrawnArrow from "../../assets/hand_drawn_arrow.svg"
+
+import {
+  ContactContainer,
+  Form,
+  InputWrapper,
+  Submit,
+  SubmitWrapper,
+  TextArea,
+  TextInput,
+  ArrowContainer
+} from "./styles"
 
 const Contact = () => {
   const form = useRef();
@@ -64,6 +75,7 @@ const Contact = () => {
 
   return (
     <ContactContainer id="contact">
+      {/* <ArrowContainer><img src={handDrawnArrow}/></ArrowContainer> */}
       <Form ref={form} onSubmit={handleSubmit}>
         <InputWrapper label="'name'" showInsideInput={!name}>
           <TextInput
@@ -102,7 +114,6 @@ const Contact = () => {
 
         <SubmitWrapper>
           <Submit
-            disabled={inputsDisabled}
             tabIndex={4}
             sending={sending}
             type="submit"

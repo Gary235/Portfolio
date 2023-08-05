@@ -22,25 +22,49 @@ export const Description = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
+    line-height: 1.7;
   }
 `;
 
-export const Text = styled.p`
+export const DescriptionData = styled.div`
+  width: 100%;
+
+  @media screen and (max-width: 1350px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const IconsTitle = styled.p`
+  margin-top: 2rem;
+  color: #ffffffaa;
+  font-family: monospace;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+
+  @media screen and (max-width: 1350px) {
+    margin-top: 3rem;
+  }
+`;
+
+export const Presentation = styled.p`
   font-size: 1.25rem;
   color: #ffffff;
-  max-width: 50%;
+  max-width: 85%;
 
   @media screen and (max-width: 1350px) {
     font-size: 1rem;
     text-align: center;
-    max-width: 85%;
+    max-width: 65%;
+    min-width: 60ch;
   }
 `;
 
 export const ImagesGrid = styled.div`
   display: grid;
   grid-template-columns: 16rem 16rem;
-  grid-template-rows:    8rem 8rem;
+  grid-template-rows:    8rem  8rem;
 
   @media screen and (max-width: 1350px) {
     display: flex;
