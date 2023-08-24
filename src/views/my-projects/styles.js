@@ -10,4 +10,8 @@ export const MyProjectsContainer = styled.section`
   @media screen and (max-width: 1350px) {
     align-items: center;
   }
+
+  @media screen and (max-width: 500px) {
+    gap: 3rem;
+  }
 `;

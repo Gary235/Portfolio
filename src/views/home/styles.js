@@ -66,6 +66,8 @@ export const ImageWrapper = styled.figure`
     width: 12rem;
     height: 12rem;
 
+    margin-bottom: 2rem;
+
     &::before {
       margin-top: calc(-6rem - 7.5%);
       margin-left: calc(-6rem - 7.5%);

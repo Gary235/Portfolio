@@ -19,6 +19,8 @@ export const MulticolorButton = styled.button`
   transition: all 0.2s;
   position: relative;
 
+  white-space: nowrap;
+
   &:hover {
     background: #FF42BF;
     box-shadow: 0 0 25px 0 #FF42BF50;

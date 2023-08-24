@@ -42,6 +42,7 @@ export const IconsTitle = styled.p`
   font-family: monospace;
   margin-bottom: 0.75rem;
   font-size: 0.85rem;
+  white-space: nowrap;
 
   @media screen and (max-width: 1350px) {
     margin-top: 3rem;
@@ -57,7 +58,8 @@ export const Presentation = styled.p`
     font-size: 1rem;
     text-align: center;
     max-width: 65%;
-    min-width: 60ch;
+    width: 100%;
+    min-width: 30ch;
   }
 `;
 

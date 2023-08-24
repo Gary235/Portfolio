@@ -15,12 +15,13 @@ import {
   IconsTitle
 } from "./styles"
 import TechStack from '../../components/tech-stack/TechStack'
+import './styles.css'
 
 const AboutMe = () => {
 
   return (
     <AboutMeContainer id="aboutme">
-      <TitleL>about <TextGradient>me</TextGradient></TitleL>
+      <TitleL className='about-me-title'>about <TextGradient>me</TextGradient></TitleL>
       <Description>
         <DescriptionData>
           <Presentation>
@@ -31,13 +32,12 @@ const AboutMe = () => {
             applying my creativity and passion for coding.
           </Presentation>
           <IconsTitle>Some tech I'm used to:</IconsTitle>
-
           <TechStack stack={['react', 'python', 'django', 'c']} />
         </DescriptionData>
-        <ImagesGrid>
+        {/* <ImagesGrid>
           <PshImage src={psh} loading="lazy" />
           <UtnImage src={utn} loading="lazy" />
-        </ImagesGrid>
+        </ImagesGrid> */}
       </Description>
     </AboutMeContainer>
   )

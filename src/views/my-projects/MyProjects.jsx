@@ -9,6 +9,7 @@ import Project from "../../components/project/Project"
 import image1 from '../../assets/project-1.jpg'
 import image2 from '../../assets/project-2.jpg'
 import image3 from '../../assets/project-3.jpg'
+import image4 from '../../assets/project-4.jpg'
 
 const PROJECTS = [
   {
@@ -20,16 +21,23 @@ const PROJECTS = [
   },
   {
     id: '002',
-    title: 'Better Youtube',
+    title: 'WatchLog',
     description: 'sssssssssssss sss s ',
     image: image2,
     stack: ['react', 'typescript', 'netlify']
   },
   {
     id: '003',
+    title: 'Better Youtube',
+    description: 'sssssssssssss sss s ',
+    image: image3,
+    stack: ['react', 'typescript', 'netlify']
+  },
+  {
+    id: '004',
     title: 'Calculator',
     description: 'vvvvvv vvvvvvvvvvvv cvcv',
-    image: image3,
+    image: image4,
     stack: ['html', 'css', 'javascript']
   }
 ]

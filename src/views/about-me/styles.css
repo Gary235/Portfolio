@@ -1,0 +1,8 @@
+
+@media screen and (max-width: 1350px) {
+
+  .about-me-title::before,
+  .about-me-title::after {
+    top: 0.5rem;
+  }
+}

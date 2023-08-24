@@ -11,4 +11,8 @@ export const AppLayout = styled.main`
   display: flex;
   flex-direction: column;
   gap: 10rem;
+
+  @media screen and (max-width: 500px) {
+    padding: 0 1rem;
+  }
 `;

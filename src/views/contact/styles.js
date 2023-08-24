@@ -5,7 +5,7 @@ export const ContactContainer = styled.section`
   height: fit-content;
   padding: 2rem 0;
   width: 100%;
-  min-width: 320px;
+  /* min-width: 320px; */
   border-radius: 5px;
   background-size: 120px 120px;
   background-image: linear-gradient(
@@ -41,7 +41,7 @@ export const Form = styled.form`
   @media screen and (max-width: 900px) {
     grid-template-columns: unset;
     grid-template-areas: 'name' 'email' 'message' 'submit';
-    justify-content: unset;
+    justify-content: center;
   }
 `;
 
@@ -66,6 +66,11 @@ export const InputWrapper = styled.div`
 
     font-size: ${({showInsideInput}) => showInsideInput ? '14px' : '11px'};
     top: ${({showInsideInput}) => showInsideInput ? '1rem' : '2px'};
+  }
+
+
+  @media screen and (max-width: 500px) {
+    width: 15rem;
   }
 `;
 
@@ -121,6 +126,10 @@ export const TextArea = styled.textarea`
     -webkit-text-fill-color: #000;
     color: #000;
     background: #FF42BF;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: unset;
   }
 `
 
