@@ -22,21 +22,21 @@ const PROJECTS = [
   {
     id: '002',
     title: 'WatchLog',
-    description: 'sssssssssssss sss s ',
+    description: "A personalized watchlist and show tracker. Seamlessly manage the shows you're currently watching with ease. Keep tabs on your favorite series, never missing a beat. <br/><br/> <strong>Stay organized, stay entertained.</strong>",
     image: image2,
-    stack: ['react', 'typescript', 'netlify']
+    stack: ['react', 'mantine', 'netlify']
   },
   {
     id: '003',
     title: 'Better Youtube',
-    description: 'sssssssssssss sss s ',
+    description: 'A <strong>YouTube clone</strong> that brings the familiar experience you love. Dive into a world of videos, creators, and endless entertainment. Discover, watch, and engage just like you would on the original platform. <br/><br/> Welcome to a familiar yet exciting new space.',
     image: image3,
     stack: ['react', 'typescript', 'netlify']
   },
   {
     id: '004',
     title: 'Calculator',
-    description: 'vvvvvv vvvvvvvvvvvv cvcv',
+    description: 'Experience effortless number crunching and mathematical convenience at your fingertips. Simplify complex calculations and enjoy a <strong>user-friendly interface</strong> that makes math a breeze. <br/><br/> Elevate your computation game with our powerful yet intuitive calculator solution.',
     image: image4,
     stack: ['html', 'css', 'javascript']
   }

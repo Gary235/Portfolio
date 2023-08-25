@@ -22,6 +22,7 @@ export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${({toTheLeft}) => toTheLeft ? 'flex-start' : 'flex-end'};
+  text-align: ${({toTheLeft}) => toTheLeft ? 'start' : 'end'};
   max-width: 35%;
   line-height: 2;
 

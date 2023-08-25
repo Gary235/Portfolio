@@ -12,11 +12,11 @@ import css from '../../assets/css-icon.svg'
 import netlify from '../../assets/netlify-icon.svg'
 import html from '../../assets/html-icon.svg'
 import shell from '../../assets/shell-icon.svg'
-
+import mantine from '../../assets/mantine-icon.svg'
 
 const getTechIcon = tech => {
   return {
-    c, django, react, python, javascript, typescript, css, netlify, html, shell,
+    c, django, react, python, javascript, typescript, css, netlify, html, shell, mantine
   }[tech] ?? '';
 }
 
