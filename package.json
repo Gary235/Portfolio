@@ -2,7 +2,7 @@
   "name": "-",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gary235.github.io/portfolio-2/",
+  "homepage": "https://gary235.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "animejs": "^3.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.5"
