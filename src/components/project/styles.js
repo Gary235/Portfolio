@@ -95,11 +95,13 @@ export const LinksContainer = styled.span`
   }
 `
 
+export const LinkAnchor = styled.a``
+
 export const LinkImage = styled.img`
   opacity: 0.6;
   transition: all 200ms ease-out;
 
-  &:hover {
+  ${LinkAnchor}:hover > & {
     opacity: 1;
     filter: drop-shadow(0 0 10px #ffffff90);
   }

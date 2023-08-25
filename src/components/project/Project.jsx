@@ -2,7 +2,7 @@ import TextGradient from "../../components/text-gradient/TextGradient"
 import TechStack from "../tech-stack/TechStack"
 import { TitleM } from "../../styled-components/titles"
 
-import { LinkImage, LinksContainer, ProjectBody, ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
+import { LinkAnchor, LinkImage, LinksContainer, ProjectBody, ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
 
 import github from '../../assets/github-icon.svg'
 import site from '../../assets/site-icon.svg'
@@ -25,9 +25,9 @@ const Project = (props) =>{
       {links.length && (
         <LinksContainer toTheLeft={position % 2 === 0}>
           {links.map(link => (
-            <a key={link} href={link} target="_blank">
+            <LinkAnchor key={link} href={link} target="_blank">
               <LinkImage src={link.includes('github.com') ? github : site} />
-            </a>
+            </LinkAnchor>
           ))}
         </LinksContainer>
       )}
