@@ -7,12 +7,13 @@ export const ProjectContainer = styled.article`
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+  position: relative;
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     justify-content: center;
     gap: 0;
   }
@@ -30,7 +31,7 @@ export const ProjectInfo = styled.div`
     margin-top: auto;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     display: none;
   }
 `;
@@ -38,7 +39,6 @@ export const ProjectInfo = styled.div`
 export const ProjectBody = styled.p`
   color: #ffffff;
 `
-
 
 export const ProjectImageWrapper = styled.figure`
   height: 100%;
@@ -61,7 +61,7 @@ export const ProjectImageWrapper = styled.figure`
     opacity: 0.2;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     width: 100%;
 
     &::before {
@@ -76,8 +76,31 @@ export const ProjectImage = styled.img`
   object-fit: cover;
   border-radius: 0.25rem;
 
-
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     width: 100%;
+  }
+`
+export const LinksContainer = styled.span`
+  position: absolute;
+  left: ${({toTheLeft}) => toTheLeft ? 'calc(100% + 1.25rem)' : '-3.25rem'};
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+`
+
+export const LinkImage = styled.img`
+  opacity: 0.6;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #ffffff90);
   }
 `
