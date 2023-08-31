@@ -400,7 +400,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   }
 `;R.img`
   width: 1.5rem;
-`;var A0="/portfolio/assets/python-icon.b4330726.svg",z0="/portfolio/assets/c-icon.3e022aaa.svg",F0="/portfolio/assets/django-icon.807b36e8.svg",R0="/portfolio/assets/react-icon.a8a6fbf2.svg",$0="/portfolio/assets/js-icon.ac81e010.svg",D0="/portfolio/assets/ts-icon.2e718fc3.svg",U0="/portfolio/assets/css-icon.9186c458.svg",B0="/portfolio/assets/netlify-icon.09a45fe1.svg",V0="/portfolio/assets/html-icon.db0272a8.svg",H0="/portfolio/assets/shell-icon.07398644.svg",W0="/portfolio/assets/mantine-icon.fcaca9df.svg";const b0=e=>{var t;return(t={c:z0,django:F0,react:R0,python:A0,javascript:$0,typescript:D0,css:U0,netlify:B0,html:V0,shell:H0,mantine:W0}[e])!=null?t:""},kd=({stack:e,width:t=24})=>j(j0,{children:e.map(n=>j("img",{alt:n,title:n,width:t,src:b0(n)},n))});const Q0=()=>pe(I0,{id:"aboutme",children:[pe(nd,{className:"about-me-title",children:["about ",j(wo,{children:"me"})]}),j(N0,{children:pe(O0,{children:[pe(M0,{children:["Hello! I'm Gary, an enthusiast of technology and programming."," ","I am studying Software Engineering at the National Technological University (",j("a",{href:"https://utn.edu.ar/",target:"_blank",className:"link",children:"UTN"}),"),"," ","where I am expanding my knowledge in the world of computer science."," ","Additionally, I am honing my skills as a Web Developer at ",j("a",{href:"https://wearepsh.com/",target:"_blank",className:"link",children:"PSH"}),","," ","applying my creativity and passion for coding."]}),j(L0,{children:"Some tech I'm used to:"}),j(kd,{stack:["react","python","django","c"]})]})})]}),Y0=R.section`
+`;var A0="/portfolio/assets/python-icon.b4330726.svg",z0="/portfolio/assets/c-icon.3e022aaa.svg",F0="/portfolio/assets/django-icon.807b36e8.svg",R0="/portfolio/assets/react-icon.a8a6fbf2.svg",$0="/portfolio/assets/js-icon.ac81e010.svg",D0="/portfolio/assets/ts-icon.2e718fc3.svg",U0="/portfolio/assets/css-icon.9186c458.svg",B0="/portfolio/assets/netlify-icon.09a45fe1.svg",V0="/portfolio/assets/html-icon.db0272a8.svg",H0="/portfolio/assets/shell-icon.07398644.svg",W0="/portfolio/assets/mantine-icon.fcaca9df.svg",b0="/portfolio/assets/git-icon.4c633db4.svg";const Q0=e=>{var t;return(t={c:z0,django:F0,react:R0,python:A0,javascript:$0,typescript:D0,css:U0,netlify:B0,html:V0,shell:H0,mantine:W0,git:b0}[e])!=null?t:""},kd=({stack:e,width:t=24})=>j(j0,{children:e.map(n=>j("img",{alt:n,title:n,width:t,src:Q0(n)},n))});const Y0=()=>pe(I0,{id:"aboutme",children:[pe(nd,{className:"about-me-title",children:["about ",j(wo,{children:"me"})]}),j(N0,{children:pe(O0,{children:[pe(M0,{children:["Hello! I'm Gary, an enthusiast of technology and programming."," ","I am studying Software Engineering at the National Technological University (",j("a",{href:"https://utn.edu.ar/",target:"_blank",className:"link",children:"UTN"}),"),"," ","where I am expanding my knowledge in the world of computer science."," ","Additionally, I am honing my skills as a Web Developer at ",j("a",{href:"https://wearepsh.com/",target:"_blank",className:"link",children:"PSH"}),","," ","applying my creativity and passion for coding."]}),j(L0,{children:"Some tech I'm used to:"}),j(kd,{stack:["react","python","django","c","git"]})]})})]}),G0=R.section`
   width: 100%;
 
   display: flex;
@@ -414,7 +414,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 500px) {
     gap: 3rem;
   }
-`,G0=R.article`
+`,K0=R.article`
   display: flex;
   width: 100%;
   height: 40vh;
@@ -431,7 +431,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     justify-content: center;
     gap: 0;
   }
-`,K0=R.div`
+`,X0=R.div`
   display: flex;
   flex-direction: column;
   align-items: ${({toTheLeft:e})=>e?"flex-start":"flex-end"};
@@ -446,9 +446,9 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 1300px) {
     display: none;
   }
-`,X0=R.p`
+`,Z0=R.p`
   color: #ffffff;
-`,Z0=R.figure`
+`,q0=R.figure`
   height: 100%;
   width: fit-content;
   position: relative;
@@ -476,7 +476,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
       display: none;
     }
   }
-`,q0=R.img`
+`,J0=R.img`
   height: 100%;
   aspect-ratio: 1.75 / 1;
   object-fit: cover;
@@ -485,7 +485,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 1300px) {
     width: 100%;
   }
-`,J0=R.span`
+`,eg=R.span`
   position: absolute;
   left: ${({toTheLeft:e})=>e?"calc(100% + 1.25rem)":"-3.25rem"};
 
@@ -498,7 +498,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 1300px) {
     display: none;
   }
-`,Ed=R.a``,eg=R.img`
+`,Ed=R.a``,tg=R.img`
   opacity: 0.6;
   transition: all 200ms ease-out;
 
@@ -506,7 +506,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     opacity: 1;
     filter: drop-shadow(0 0 10px #ffffff90);
   }
-`;var tg="/portfolio/assets/github-icon.7bbc8b31.svg",ng="/portfolio/assets/site-icon.257d3584.svg";const rg=e=>{const{title:t,description:n,image:r,position:i,stack:o,links:l}=e;return pe(G0,{children:[pe(K0,{toTheLeft:i%2===0,children:[j(rd,{children:j(wo,{children:t})}),j(X0,{dangerouslySetInnerHTML:{__html:n}}),j(kd,{stack:o,width:18})]}),j(Z0,{image:r,children:j(q0,{src:r,loading:"lazy"})}),l.length&&j(J0,{toTheLeft:i%2===0,children:l.map(u=>j(Ed,{href:u,target:"_blank",children:j(eg,{src:u.includes("github.com")?tg:ng})},u))})]})};var ig="/portfolio/assets/project-1.df3cf023.jpg",og="/portfolio/assets/project-2.b5aeff02.jpg",lg="/portfolio/assets/project-3.922cd304.jpg",ug="/portfolio/assets/project-4.d61b06ff.jpg";const ag=[{id:"001",title:"T.U.K.I.",description:"This project is about an imitation of how a real <strong>Operating System</strong> works, consisting of 5 modules (Kernel - Memory - FileSystem - CPU - Console). It can perform instructions such as <i>CREATE_SEGMENT, F_READ, MOV_IN,</i> among others. <br/><br/> It features a memory segmentation system and a UFS (EXT2) type for the filesystem.",image:ig,stack:["c","shell"],links:["https://github.com/Gary235/tuki"]},{id:"002",title:"WatchLog",description:"A personalized watchlist and show tracker. Seamlessly manage the shows you're currently watching with ease. Keep tabs on your favorite series, never missing a beat. <br/><br/> <strong>Stay organized, stay entertained.</strong>",image:og,stack:["react","mantine","netlify"],links:["https://github.com/Gary235/watch-log","https://watch-log.netlify.app/"]},{id:"003",title:"Better Youtube",description:"A <strong>YouTube clone</strong> that brings the familiar experience you love. Dive into a world of videos, creators, and endless entertainment. Discover, watch, and engage just like you would on the original platform. <br/><br/> Welcome to a familiar yet exciting new space.",image:lg,stack:["react","typescript","netlify"],links:["https://github.com/Gary235/Better-Youtube","https://betteryoutube.netlify.app/"]},{id:"004",title:"Calculator",description:"Experience effortless number crunching and mathematical convenience at your fingertips. Simplify complex calculations and enjoy a <strong>user-friendly interface</strong> that makes math a breeze. <br/><br/> Elevate your computation game with our powerful yet intuitive calculator solution.",image:ug,stack:["html","css","javascript"],links:["https://github.com/Gary235/Simple-Calculator","https://gary235.github.io/Simple-Calculator/"]}],sg=()=>pe(Y0,{id:"myprojects",children:[pe(nd,{children:["my ",j(wo,{children:"projects"})]}),(t=>t.map((n,r)=>j(rg,pa(da({},n),{position:r}),n.id)))(ag)]}),Ir={_origin:"https://api.emailjs.com"},cg=(e,t="https://api.emailjs.com")=>{Ir._userID=e,Ir._origin=t},Cd=(e,t,n)=>{if(!e)throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!t)throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!n)throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";return!0};class Gs{constructor(t){this.status=t.status,this.text=t.responseText}}const _d=(e,t,n={})=>new Promise((r,i)=>{const o=new XMLHttpRequest;o.addEventListener("load",({target:l})=>{const u=new Gs(l);u.status===200||u.text==="OK"?r(u):i(u)}),o.addEventListener("error",({target:l})=>{i(new Gs(l))}),o.open("POST",Ir._origin+e,!0),Object.keys(n).forEach(l=>{o.setRequestHeader(l,n[l])}),o.send(t)}),fg=(e,t,n,r)=>{const i=r||Ir._userID;Cd(i,e,t);const o={lib_version:"3.6.2",user_id:i,service_id:e,template_id:t,template_params:n};return _d("/api/v1.0/email/send",JSON.stringify(o),{"Content-type":"application/json"})},dg=e=>{let t;if(typeof e=="string"?t=document.querySelector(e):t=e,!t||t.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of form";return t},pg=(e,t,n,r)=>{const i=r||Ir._userID,o=dg(n);Cd(i,e,t);const l=new FormData(o);return l.append("lib_version","3.6.2"),l.append("service_id",e),l.append("template_id",t),l.append("user_id",i),_d("/api/v1.0/email/send-form",l)};var mg={init:cg,send:fg,sendForm:pg};const hg=R.section`
+`;var ng="/portfolio/assets/github-icon.7bbc8b31.svg",rg="/portfolio/assets/site-icon.257d3584.svg";const ig=e=>{const{title:t,description:n,image:r,position:i,stack:o,links:l}=e;return pe(K0,{children:[pe(X0,{toTheLeft:i%2===0,children:[j(rd,{children:j(wo,{children:t})}),j(Z0,{dangerouslySetInnerHTML:{__html:n}}),j(kd,{stack:o,width:18})]}),j(q0,{image:r,children:j(J0,{src:r,loading:"lazy"})}),l.length&&j(eg,{toTheLeft:i%2===0,children:l.map(u=>j(Ed,{href:u,target:"_blank",children:j(tg,{src:u.includes("github.com")?ng:rg})},u))})]})};var og="/portfolio/assets/project-1.df3cf023.jpg",lg="/portfolio/assets/project-2.b101a27b.jpg",ug="/portfolio/assets/project-3.922cd304.jpg",ag="/portfolio/assets/project-4.d61b06ff.jpg";const sg=[{id:"001",title:"T.U.K.I.",description:"This project is about an imitation of how a real <strong>Operating System</strong> works, consisting of 5 modules (Kernel - Memory - FileSystem - CPU - Console). It can perform instructions such as <i>CREATE_SEGMENT, F_READ, MOV_IN,</i> among others. <br/><br/> It features a memory segmentation system and a UFS (EXT2) type for the filesystem.",image:og,stack:["c","shell"],links:["https://github.com/Gary235/tuki"]},{id:"002",title:"WatchLog",description:"A personalized watchlist and show tracker. Seamlessly manage the shows you're currently watching with ease. Keep tabs on your favorite series, never missing a beat. <br/><br/> <strong>Stay organized, stay entertained.</strong>",image:lg,stack:["react","mantine","netlify"],links:["https://github.com/Gary235/watch-log","https://watch-log.netlify.app/"]},{id:"003",title:"Better Youtube",description:"A <strong>YouTube clone</strong> that brings the familiar experience you love. Dive into a world of videos, creators, and endless entertainment. Discover, watch, and engage just like you would on the original platform. <br/><br/> Welcome to a familiar yet exciting new space.",image:ug,stack:["react","typescript","netlify"],links:["https://github.com/Gary235/Better-Youtube","https://betteryoutube.netlify.app/"]},{id:"004",title:"Calculator",description:"Experience effortless number crunching and mathematical convenience at your fingertips. Simplify complex calculations and enjoy a <strong>user-friendly interface</strong> that makes math a breeze. <br/><br/> Elevate your computation game with our powerful yet intuitive calculator solution.",image:ag,stack:["html","css","javascript"],links:["https://github.com/Gary235/Simple-Calculator","https://gary235.github.io/Simple-Calculator/"]}],cg=()=>pe(G0,{id:"myprojects",children:[pe(nd,{children:["my ",j(wo,{children:"projects"})]}),(t=>t.map((n,r)=>j(ig,pa(da({},n),{position:r}),n.id)))(sg)]}),Ir={_origin:"https://api.emailjs.com"},fg=(e,t="https://api.emailjs.com")=>{Ir._userID=e,Ir._origin=t},Cd=(e,t,n)=>{if(!e)throw"The public key is required. Visit https://dashboard.emailjs.com/admin/account";if(!t)throw"The service ID is required. Visit https://dashboard.emailjs.com/admin";if(!n)throw"The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";return!0};class Gs{constructor(t){this.status=t.status,this.text=t.responseText}}const _d=(e,t,n={})=>new Promise((r,i)=>{const o=new XMLHttpRequest;o.addEventListener("load",({target:l})=>{const u=new Gs(l);u.status===200||u.text==="OK"?r(u):i(u)}),o.addEventListener("error",({target:l})=>{i(new Gs(l))}),o.open("POST",Ir._origin+e,!0),Object.keys(n).forEach(l=>{o.setRequestHeader(l,n[l])}),o.send(t)}),dg=(e,t,n,r)=>{const i=r||Ir._userID;Cd(i,e,t);const o={lib_version:"3.6.2",user_id:i,service_id:e,template_id:t,template_params:n};return _d("/api/v1.0/email/send",JSON.stringify(o),{"Content-type":"application/json"})},pg=e=>{let t;if(typeof e=="string"?t=document.querySelector(e):t=e,!t||t.nodeName!=="FORM")throw"The 3rd parameter is expected to be the HTML form element or the style selector of form";return t},mg=(e,t,n,r)=>{const i=r||Ir._userID,o=pg(n);Cd(i,e,t);const l=new FormData(o);return l.append("lib_version","3.6.2"),l.append("service_id",e),l.append("template_id",t),l.append("user_id",i),_d("/api/v1.0/email/send-form",l)};var hg={init:fg,send:dg,sendForm:mg};const gg=R.section`
   background-color: #d11d95;
   height: fit-content;
   padding: 2rem 0;
@@ -528,7 +528,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   justify-content: center;
   align-items: center;
   position: relative;
-`,gg=R.form`
+`,vg=R.form`
   width: 100%;
   display: grid;
 
@@ -598,7 +598,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     color: #000;
     background: #FF42BF;
   }
-`,vg=R.textarea`
+`,yg=R.textarea`
   min-width: 100%;
   min-height: 7.8rem;
   padding: 1rem 0.75rem 0;
@@ -629,7 +629,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 500px) {
     min-width: unset;
   }
-`,yg=R.div`
+`,wg=R.div`
   grid-area: submit;
   width: fit-content;
   position: relative;
@@ -638,7 +638,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 900px) {
     justify-self: center;
   }
-`,wg=R.input`
+`,Sg=R.input`
   width: 100px;
   height: 100%;
   border-radius: 0.35rem;
@@ -690,7 +690,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     bottom: -4rem;
     right: 1rem;
   }
-`;const Sg=()=>{const e=de.exports.useRef(),[t,n]=de.exports.useState(!1),[r,i]=de.exports.useState(!1),[o,l]=de.exports.useState(""),[u,a]=de.exports.useState(""),[f,h]=de.exports.useState(""),w={name:l,email:a,message:h},m=p=>{const{target:{name:g,value:I}}=p;w[g](I)},C=()=>n(!0),S=()=>n(!1),y=()=>{i(!0);const p=document.getElementById("contact-submit");p.classList.remove("submitted"),p.classList.add("submitting")},d=()=>{i(!1);const p=document.getElementById("contact-submit");p.classList.remove("submitting"),p.classList.add("submitted")},c=()=>Object.values(w).forEach(p=>p(""));return j(hg,{id:"contact",children:pe(gg,{ref:e,onSubmit:p=>{p.preventDefault(),C(),y(),mg.sendForm("service_iqbz12q","template_zkd74qq",e.current,"IcHK-nroaFcDg9HQf").then(()=>{d(),S(),c()}).catch(g=>{console.error(g),d(),S()})},children:[j(qo,{label:"'name'",showInsideInput:!o,children:j(Ks,{disabled:t,tabIndex:1,value:o,type:"text",name:"name",label:"name",onChange:m,required:!0})}),j(qo,{label:"'email'",showInsideInput:!u,children:j(Ks,{disabled:t,tabIndex:2,value:u,type:"email",name:"email",onChange:m,required:!0})}),j(qo,{label:"'message'",showInsideInput:!f,children:j(vg,{disabled:t,tabIndex:3,value:f,name:"message",onChange:m,required:!0})}),j(yg,{children:j(wg,{tabIndex:4,sending:r,type:"submit",value:r?"sending":"send",id:"contact-submit"})})]})})},xg=R.section`
+`;const xg=()=>{const e=de.exports.useRef(),[t,n]=de.exports.useState(!1),[r,i]=de.exports.useState(!1),[o,l]=de.exports.useState(""),[u,a]=de.exports.useState(""),[f,h]=de.exports.useState(""),w={name:l,email:a,message:h},m=p=>{const{target:{name:g,value:I}}=p;w[g](I)},C=()=>n(!0),S=()=>n(!1),y=()=>{i(!0);const p=document.getElementById("contact-submit");p.classList.remove("submitted"),p.classList.add("submitting")},d=()=>{i(!1);const p=document.getElementById("contact-submit");p.classList.remove("submitting"),p.classList.add("submitted")},c=()=>Object.values(w).forEach(p=>p(""));return j(gg,{id:"contact",children:pe(vg,{ref:e,onSubmit:p=>{p.preventDefault(),C(),y(),hg.sendForm("service_iqbz12q","template_zkd74qq",e.current,"IcHK-nroaFcDg9HQf").then(()=>{d(),S(),c()}).catch(g=>{console.error(g),d(),S()})},children:[j(qo,{label:"'name'",showInsideInput:!o,children:j(Ks,{disabled:t,tabIndex:1,value:o,type:"text",name:"name",label:"name",onChange:m,required:!0})}),j(qo,{label:"'email'",showInsideInput:!u,children:j(Ks,{disabled:t,tabIndex:2,value:u,type:"email",name:"email",onChange:m,required:!0})}),j(qo,{label:"'message'",showInsideInput:!f,children:j(yg,{disabled:t,tabIndex:3,value:f,name:"message",onChange:m,required:!0})}),j(wg,{children:j(Sg,{tabIndex:4,sending:r,type:"submit",value:r?"sending":"send",id:"contact-submit"})})]})})},kg=R.section`
   width: 100%;
   margin: 0 0 5rem 0;
 
@@ -700,23 +700,23 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   justify-content: space-between;
 `,Jo=R.a`
   color: #FFE1A2AA;
-`,kg=()=>pe(xg,{children:[j(Jo,{target:"_blank",href:"https://www.linkedin.com/in/gary-berkman",children:"linkedin"}),j(Jo,{target:"_blank",href:"https://www.instagram.com/gary.berkman/",children:"instagram"}),j(Jo,{href:"mailto:berkman.gary@gmail.com",children:"berkman.gary@gmail.com"})]}),Eg=()=>{const[e,t]=de.exports.useState({height:window.innerHeight,width:window.innerWidth});return de.exports.useEffect(()=>{const n=()=>{t({height:window.innerHeight,width:window.innerWidth})};return window.addEventListener("resize",n),function(){window.removeEventListener("resize",n)}},[]),e},Cg=R.li`
+`,Eg=()=>pe(kg,{children:[j(Jo,{target:"_blank",href:"https://www.linkedin.com/in/gary-berkman",children:"linkedin"}),j(Jo,{target:"_blank",href:"https://www.instagram.com/gary.berkman/",children:"instagram"}),j(Jo,{href:"mailto:berkman.gary@gmail.com",children:"berkman.gary@gmail.com"})]}),Cg=()=>{const[e,t]=de.exports.useState({height:window.innerHeight,width:window.innerWidth});return de.exports.useEffect(()=>{const n=()=>{t({height:window.innerHeight,width:window.innerWidth})};return window.addEventListener("resize",n),function(){window.removeEventListener("resize",n)}},[]),e},_g=R.li`
   display: inline;
   user-select: none;
-`,_g=R.a`
+`,Pg=R.a`
   text-decoration: none;
   color: #fff;
 
   font-size: 1rem;
   font-weight: 400;
-`,Pg=R.a`
+`,Tg=R.a`
   text-decoration: none;
   color: #fff;
 
   font-size: 1rem;
   font-weight: 600;
   opacity: 1;
-`,Jr=e=>{const{active:t=!1,text:n,url:r,clickHandler:i}=e;return j(Cg,{onClick:i,children:j(t?Pg:_g,{href:r,children:n})})},Tg=R.header`
+`,Jr=e=>{const{active:t=!1,text:n,url:r,clickHandler:i}=e;return j(_g,{onClick:i,children:j(t?Tg:Pg,{href:r,children:n})})},Ig=R.header`
   width: 650px;
   display: flex;
   justify-content: center;
@@ -731,7 +731,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     align-items: center;
     gap: 0.8rem;
   }
-`,Ig=R.nav`
+`,Ng=R.nav`
   display: flex;
 
   width: fit-content;
@@ -749,7 +749,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     justify-content: center;
     padding: 2rem 0;
   }
-`,Ng=R.ul`
+`,Og=R.ul`
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -759,20 +759,20 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     flex-direction: column;
     gap: 3rem;
   }
-`,Og=R.button`
+`,Lg=R.button`
   padding: 1rem;
   background-color: #11050d50;
   color: #ffffff;
   border-radius: 0.3rem;
   border: none;
   backdrop-filter: blur(1rem);
-`,Lg=R.img`
+`,Mg=R.img`
   display: ${({show:e})=>e?"inline":"none"};
 
   width: 3rem;
   height: 3rem;
   border-radius: 4px;
-`,Mg=()=>{const[e,t]=de.exports.useState(!1),[n,r]=de.exports.useState(!0),i=Eg();de.exports.useEffect(()=>{const u=document.querySelector("#profile-image"),a=new IntersectionObserver(([f])=>{r(f.isIntersecting)});return u&&a.observe(u),function(){u&&a.unobserve(u)}},[]);const o=i.width<700,l=()=>t(!e);return!o&&e&&t(!1),pe(Tg,{children:[o&&j(Og,{onClick:l,children:"menu"}),(!o||e)&&j(Ig,{children:pe(Ng,{children:[j(Lg,{src:id,loading:"lazy",show:!n}),j("span",{className:"link",children:j(Jr,{text:"home",url:"#home",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"about me",url:"#aboutme",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"my projects",url:"#myprojects",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"contact me",url:"#contact",clickHandler:l})})]})})]})},jg=R.main`
+`,jg=()=>{const[e,t]=de.exports.useState(!1),[n,r]=de.exports.useState(!0),i=Cg();de.exports.useEffect(()=>{const u=document.querySelector("#profile-image"),a=new IntersectionObserver(([f])=>{r(f.isIntersecting)});return u&&a.observe(u),function(){u&&a.unobserve(u)}},[]);const o=i.width<700,l=()=>t(!e);return!o&&e&&t(!1),pe(Ig,{children:[o&&j(Lg,{onClick:l,children:"menu"}),(!o||e)&&j(Ng,{children:pe(Og,{children:[j(Mg,{src:id,loading:"lazy",show:!n}),j("span",{className:"link",children:j(Jr,{text:"home",url:"#home",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"about me",url:"#aboutme",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"my projects",url:"#myprojects",clickHandler:l})}),j("span",{className:"link",children:j(Jr,{text:"contact me",url:"#contact",clickHandler:l})})]})})]})},Ag=R.main`
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -787,4 +787,4 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
   @media screen and (max-width: 500px) {
     padding: 0 1rem;
   }
-`,Ag=()=>pe(jg,{children:[j(Mg,{}),j(T0,{}),j(Q0,{}),j(sg,{}),j(Sg,{}),j(kg,{})]});zm.render(j(Or.StrictMode,{children:j(Ag,{})}),document.getElementById("root"));
+`,zg=()=>pe(Ag,{children:[j(jg,{}),j(T0,{}),j(Y0,{}),j(cg,{}),j(xg,{}),j(Eg,{})]});zm.render(j(Or.StrictMode,{children:j(zg,{})}),document.getElementById("root"));
