@@ -32,7 +32,7 @@ const AboutMe = () => {
             applying my creativity and passion for coding.
           </Presentation>
           <IconsTitle>Some tech I'm used to:</IconsTitle>
-          <TechStack stack={['react', 'python', 'django', 'c']} />
+          <TechStack stack={['react', 'python', 'django', 'c', 'git']} />
         </DescriptionData>
         {/* <ImagesGrid>
           <PshImage src={psh} loading="lazy" />
