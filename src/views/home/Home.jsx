@@ -48,8 +48,9 @@ const Home = () => {
           <BWButton onClick={() => goTo("contact") }>contact me</BWButton>
         </Buttons>
       </Info>
-      <ImageWrapper> <ProfileImage src={profilePhoto} id="profile-image" loading="lazy" /></ImageWrapper>
-      {/* <BlurredGradient /> */}
+      <ImageWrapper>
+        <ProfileImage alt="profile image" src={profilePhoto} id="profile-image" loading="lazy" />
+      </ImageWrapper>
       <Scroll><Arrow /></Scroll>
     </HomeContainer>
   )

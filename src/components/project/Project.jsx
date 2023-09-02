@@ -19,7 +19,7 @@ const Project = (props) =>{
       </ProjectInfo>
 
       <ProjectImageWrapper image={image}>
-        <ProjectImage src={image} loading="lazy" />
+        <ProjectImage src={image} loading="lazy" alt={`${title} image`} />
       </ProjectImageWrapper>
 
       {links.length && (
