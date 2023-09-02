@@ -42,11 +42,11 @@ const Nav = () => {
       {(!shouldShowMenuIcon || showMobileNavList) && (
         <NavBar>
           <NavList>
-            <Image src={profilePhoto} loading="lazy" show={!isProfileImageIntersecting} />
-            <span className="link"><NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} /></span>
-            <span className="link"><NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} /></span>
-            <span className="link"><NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} /></span>
-            <span className="link"><NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} /></span>
+            <li><Image src={profilePhoto} loading="lazy" show={!isProfileImageIntersecting} /></li>
+            <li className="link"><NavListItem text="home" url="#home" clickHandler={toggleMobileNavList} /></li>
+            <li className="link"><NavListItem text="about me" url="#aboutme" clickHandler={toggleMobileNavList} /></li>
+            <li className="link"><NavListItem text="my projects" url="#myprojects" clickHandler={toggleMobileNavList} /></li>
+            <li className="link"><NavListItem text="contact me" url="#contact" clickHandler={toggleMobileNavList} /></li>
           </NavList>
         </NavBar>
       )}

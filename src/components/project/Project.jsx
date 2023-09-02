@@ -10,6 +10,11 @@ import site from '../../assets/site-icon.svg'
 const Project = (props) =>{
   const {title, description, image, position, stack, links} = props
 
+  const getLinkProps = link => ({
+    src: link.includes('github.com') ? github : site,
+    alt: `${link.includes('github.com') ? 'repository' : 'website'} link`
+  })
+
   return (
     <ProjectContainer>
       <ProjectInfo toTheLeft={position % 2 === 0}>
@@ -25,8 +30,13 @@ const Project = (props) =>{
       {links.length && (
         <LinksContainer toTheLeft={position % 2 === 0}>
           {links.map(link => (
-            <LinkAnchor key={link} href={link} target="_blank">
-              <LinkImage src={link.includes('github.com') ? github : site} />
+            <LinkAnchor
+              key={link}
+              href={link}
+              target="_blank"
+              aria-label={`link to ${link.includes('github.com') ? 'repository' : 'website'}`}
+            >
+              <LinkImage {...getLinkProps(link)} />
             </LinkAnchor>
           ))}
         </LinksContainer>
