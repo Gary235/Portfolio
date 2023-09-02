@@ -6,7 +6,7 @@ const NavListItem = (props) => {
   const Link = active ? ActiveItemLink : ItemLink;
 
   return (
-    <Item onClick={clickHandler}>
+    <Item onClick={clickHandler} className="link">
       <Link href={url}>{text}</Link>
     </Item>
   )
