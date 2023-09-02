@@ -80,7 +80,6 @@ const Contact = () => {
         <InputWrapper label="'name'" showInsideInput={!name}>
           <TextInput
             disabled={inputsDisabled}
-            tabIndex={0}
             value={name}
             type="text"
             name="name"
@@ -93,7 +92,7 @@ const Contact = () => {
         <InputWrapper label="'email'" showInsideInput={!email}>
           <TextInput
             disabled={inputsDisabled}
-            tabIndex={1} value={email}
+            value={email}
             type="email"
             name="email"
             onChange={handleInputChange}
@@ -104,7 +103,6 @@ const Contact = () => {
         <InputWrapper label="'message'" showInsideInput={!message}>
           <TextArea
             disabled={inputsDisabled}
-            tabIndex={2}
             value={message}
             name="message"
             onChange={handleInputChange}
@@ -114,7 +112,6 @@ const Contact = () => {
 
         <SubmitWrapper>
           <Submit
-            tabIndex={3}
             sending={sending}
             type="submit"
             value={sending ? "sending" : "send"}
