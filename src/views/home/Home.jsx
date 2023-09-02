@@ -49,7 +49,7 @@ const Home = () => {
         </Buttons>
       </Info>
       <ImageWrapper>
-        <ProfileImage alt="profile image" src={profilePhoto} id="profile-image" loading="lazy" />
+        <ProfileImage alt="profile image" src={profilePhoto} id="profile-image" loading="eager" />
       </ImageWrapper>
       <Scroll><Arrow /></Scroll>
     </HomeContainer>
