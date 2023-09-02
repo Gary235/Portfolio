@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@floating-ui/react": "^0.25.3",
     "animejs": "^3.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -26,6 +26,16 @@ const PROJECTS = [
     stack: ['react', 'mantine', 'netlify'],
     links: ['https://github.com/Gary235/watch-log', 'https://watch-log.netlify.app/']
   },
+  /**
+  {
+    id: '0021',
+    title: 'Real Time Translator',
+    description: "",
+    image: image2,
+    stack: ['python', ],
+    links: []
+  },
+  */
   {
     id: '003',
     title: 'Better Youtube',

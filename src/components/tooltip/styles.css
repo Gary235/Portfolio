@@ -1,0 +1,12 @@
+.Tooltip {
+  background-color: #35162b;
+  backdrop-filter: 1rem;
+  color: #f3f3f3;
+
+  font-size: 90%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: calc(100vw - 10px);
+}
