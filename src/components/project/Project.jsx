@@ -4,8 +4,8 @@ import { TitleM } from "../../styled-components/titles"
 
 import { LinkAnchor, LinkImage, LinksContainer, ProjectBody, ProjectContainer, ProjectImage, ProjectImageWrapper, ProjectInfo } from "./styles"
 
-import github from '../../assets/github-icon.svg'
-import site from '../../assets/site-icon.svg'
+import github from '../../assets/icons/github-icon.svg'
+import site from '../../assets/icons/site-icon.svg'
 
 const Project = (props) =>{
   const {title, description, image, position, stack, links} = props

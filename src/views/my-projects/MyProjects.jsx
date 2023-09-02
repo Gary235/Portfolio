@@ -1,13 +1,13 @@
 import TextGradient from "../../components/text-gradient/TextGradient"
 import { TitleL } from "../../styled-components/titles"
-
-import { MyProjectsContainer } from "./styles"
 import Project from "../../components/project/Project"
 
-import image1 from '../../assets/project-1.jpg'
-import image2 from '../../assets/project-2.jpg'
-import image3 from '../../assets/project-3.jpg'
-import image4 from '../../assets/project-4.jpg'
+import { MyProjectsContainer } from "./styles"
+
+import image1 from '../../assets/projects/project-1.jpg'
+import image2 from '../../assets/projects/project-2.jpg'
+import image3 from '../../assets/projects/project-3.jpg'
+import image4 from '../../assets/projects/project-4.jpg'
 
 const PROJECTS = [
   {
