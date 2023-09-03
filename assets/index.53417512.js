@@ -109,7 +109,7 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     border-radius: 120px;
 
     filter: contrast(3);
-    background-image: url(src/assets/blobs.png);
+    background-image: url(/assets/blobs.png);
     background-repeat: no-repeat;
     background-size: contain;
     animation: 10s rotate ease-in-out infinite;
