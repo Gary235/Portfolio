@@ -36,16 +36,32 @@ export const DescriptionData = styled.div`
   }
 `;
 
-export const IconsTitle = styled.p`
+export const IconsSection = styled.div`
   margin-top: 2rem;
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1350px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+`;
+
+export const IconsTitle = styled.p`
   color: #ffffffaa;
   font-family: monospace;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
   font-size: 0.85rem;
   white-space: nowrap;
 
-  @media screen and (max-width: 1350px) {
-    margin-top: 3rem;
+  @media screen and (max-width: 900px) {
+    text-align: center;
   }
 `;
 

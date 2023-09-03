@@ -12,7 +12,8 @@ import {
   Presentation,
   UtnImage,
   DescriptionData,
-  IconsTitle
+  IconsTitle,
+  IconsSection
 } from "./styles"
 import TechStack from '../../components/tech-stack/TechStack'
 import './styles.css'
@@ -31,8 +32,16 @@ const AboutMe = () => {
             Additionally, I am honing my skills as a Web Developer at <a href='https://wearepsh.com/' target='_blank' className='link'>PSH</a>,{' '}
             applying my creativity and passion for coding.
           </Presentation>
-          <IconsTitle>Some tech I'm used to:</IconsTitle>
-          <TechStack stack={['react', 'python', 'django', 'c', 'git']} />
+          <IconsSection>
+            <span>
+              <IconsTitle>Some tech I'm used to:</IconsTitle>
+              <TechStack stack={['react', 'python', 'django', 'c', 'git']} />
+            </span>
+            <span>
+              <IconsTitle>Also helped building this websites:</IconsTitle>
+              <TechStack stack={['flocabulary', 'unipyme', 'codilink']} width={null}/>
+            </span>
+          </IconsSection>
         </DescriptionData>
         {/* <ImagesGrid>
           <PshImage src={psh} loading="lazy" />

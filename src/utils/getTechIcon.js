@@ -10,10 +10,27 @@ import html from '../assets/icons/html-icon.svg'
 import shell from '../assets/icons/shell-icon.svg'
 import mantine from '../assets/icons/mantine-icon.svg'
 import git from '../assets/icons/git-icon.svg'
+import flocabulary from '../assets/icons/flocabulary-icon.svg'
+import unipyme from '../assets/icons/unipyme-icon.svg'
+import codilink from '../assets/icons/codilink-icon.svg'
 
 const getTechIcon = tech => {
   return {
-    c, django, react, python, javascript, typescript, css, netlify, html, shell, mantine, git
+    c,
+    codilink,
+    css,
+    django,
+    flocabulary,
+    git,
+    html,
+    javascript,
+    mantine,
+    netlify,
+    python,
+    react,
+    shell,
+    typescript,
+    unipyme,
   }[tech] ?? '';
 }
 

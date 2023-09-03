@@ -1,4 +1,4 @@
-.Tooltip {
+.regular-tooltip {
   background-color: #35162b;
   backdrop-filter: 1rem;
   color: #f3f3f3;
@@ -9,4 +9,30 @@
   box-sizing: border-box;
   width: max-content;
   max-width: calc(100vw - 10px);
+}
+
+.project-tooltip {
+  background-color: #f3f3f3;
+  backdrop-filter: 1rem;
+  color: #35162b;
+
+  border: none;
+  outline: none;
+  font-size: 90%;
+  padding: 8px 12px 14px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 450px;
+}
+
+.project-tooltip a {
+  text-decoration: none;
+  outline: none;
+  color: #1f52b3;
+  font-weight: 600;
+}
+
+.project-tooltip .link--semidark {
+  color: #a31674;
 }
