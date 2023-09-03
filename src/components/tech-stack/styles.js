@@ -18,4 +18,9 @@ export const TechIcons = styled.span`
 
 export const TechIcon = styled.img`
   cursor: ${({isProject}) => isProject ? 'pointer': 'unset'};
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;

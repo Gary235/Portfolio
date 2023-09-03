@@ -36,3 +36,9 @@
 .project-tooltip .link--semidark {
   color: #a31674;
 }
+
+@media screen and (max-width: 500px) {
+  .project-tooltip {
+    max-width: calc(100vw - 50px);
+  }
+}

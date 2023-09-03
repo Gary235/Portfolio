@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import getTechIcon from "../../utils/getTechIcon";
 import getTechVerbose from "../../utils/getTechVerbose";
+import getProjectLinks from "../../utils/getProjectLinks";
 
 import { Tooltip } from "../tooltip/Tooltip";
 import { TooltipTrigger } from "../tooltip/TooltipTrigger";
@@ -11,7 +12,12 @@ import { PopoverTrigger } from "../popover/PopoverTrigger";
 import { PopoverContent } from "../popover/PopoverContent";
 
 import { TechIcon, TechIcons } from "./styles";
-import getProjectLinks from "../../utils/getProjectLinks";
+
+const linkArrow = (
+  <svg fill="none" stroke="currentColor" width={15} stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  	<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path>
+  </svg>
+)
 
 const TechStack = ({stack, width = 24}) => {
   const [open, setOpen] = useState(
@@ -41,8 +47,14 @@ const TechStack = ({stack, width = 24}) => {
           <div dangerouslySetInnerHTML={{__html: getTechVerbose(tech)}} />
           {isProject && (
             <div style={{marginTop: '1rem', display: 'flex', gap: '1.5rem'}}>
-              <a href={links[0]} target="_blank" className="link--dark">Check site</a>
-              {tech === 'codilink' && <a href={links[1]} target="_blank" className="link--semidark">Check contribution</a>}
+              <a href={links[0]} target="_blank" className="link--dark" style={{display: 'flex', gap: '2px'}}>
+                Check site {linkArrow}
+              </a>
+              {tech === 'codilink' && (
+                <a href={links[1]} target="_blank" className="link--semidark" style={{display: 'flex', gap: '2px'}}>
+                  Check contribution {linkArrow}
+                </a>
+              )}
             </div>
           )}
         </options.content>
