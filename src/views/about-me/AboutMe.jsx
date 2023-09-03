@@ -1,16 +1,10 @@
 import TextGradient from '../../components/text-gradient/TextGradient'
 import { TitleL } from "../../styled-components/titles"
 
-import psh from '../../assets/psh.png'
-import utn from '../../assets/utn.png'
-
 import {
   AboutMeContainer,
   Description,
-  ImagesGrid,
-  PshImage,
   Presentation,
-  UtnImage,
   DescriptionData,
   IconsTitle,
   IconsSection
@@ -43,10 +37,6 @@ const AboutMe = () => {
             </span>
           </IconsSection>
         </DescriptionData>
-        {/* <ImagesGrid>
-          <PshImage src={psh} loading="lazy" />
-          <UtnImage src={utn} loading="lazy" />
-        </ImagesGrid> */}
       </Description>
     </AboutMeContainer>
   )

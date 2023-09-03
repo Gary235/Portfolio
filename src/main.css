@@ -97,10 +97,10 @@ body {
 }
 
 .link.utn::after {
-  background-image: url(src/assets/utn.png);
+  background-image: url(/assets/utn.png);
 }
 .link.psh::after {
-  background-image: url(src/assets/psh.png);
+  background-image: url(/assets/psh.png);
 }
 
 .submitting {
