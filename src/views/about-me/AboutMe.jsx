@@ -27,9 +27,9 @@ const AboutMe = () => {
         <DescriptionData>
           <Presentation>
             Hello! I'm Gary, an enthusiast of technology and programming.{' '}
-            I am studying Software Engineering at the National Technological University (<a href='https://utn.edu.ar/' target='_blank' className='link'>UTN</a>),{' '}
+            I am studying Software Engineering at the National Technological University (<a href='https://utn.edu.ar/' target='_blank' className='link utn'>UTN</a>),{' '}
             where I am expanding my knowledge in the world of computer science.{' '}
-            Additionally, I am honing my skills as a Web Developer at <a href='https://wearepsh.com/' target='_blank' className='link'>PSH</a>,{' '}
+            Additionally, I am honing my skills as a Web Developer at <a href='https://wearepsh.com/' target='_blank' className='link psh'>PSH</a>,{' '}
             applying my creativity and passion for coding.
           </Presentation>
           <IconsSection>

@@ -44,14 +44,14 @@ body {
   text-fill-color: transparent;
 }
 
-.link, .link--dark, .link--semidark {
+.link {
   position: relative;
   color: #FFF84B;
   cursor: pointer;
   text-decoration: none;
 }
 
-.link::before, .link--dark::before, .link--semidark::before {
+.link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -64,6 +64,11 @@ body {
   transition: all 0.2s ease-in-out 0s;
 }
 
+.link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .link--dark::before {
   background-color: #1f52b3;
 }
@@ -72,9 +77,30 @@ body {
   background-color: #a31674;
 }
 
-.link:hover::before, .link--dark:hover::before, .link--semidark:hover::before {
+.link.utn::after, .link.psh::after {
+  content: '';
+  position: absolute;
+  right: -120px;
+  top: -40px;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out 0s;
+  width: 120px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.link.utn:hover::after, .link.psh:hover::after {
   visibility: visible;
-  transform: scaleX(1);
+  transform: scale(1);
+}
+
+.link.utn::after {
+  background-image: url(src/assets/utn.png);
+}
+.link.psh::after {
+  background-image: url(src/assets/psh.png);
 }
 
 .submitting {

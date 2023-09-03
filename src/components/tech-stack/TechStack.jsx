@@ -47,11 +47,11 @@ const TechStack = ({stack, width = 24}) => {
           <div dangerouslySetInnerHTML={{__html: getTechVerbose(tech)}} />
           {isProject && (
             <div style={{marginTop: '1rem', display: 'flex', gap: '1.5rem'}}>
-              <a href={links[0]} target="_blank" className="link--dark" style={{display: 'flex', gap: '2px'}}>
+              <a href={links[0]} target="_blank" className="link link--dark" style={{display: 'flex', gap: '2px'}}>
                 Check site {linkArrow}
               </a>
               {tech === 'codilink' && (
-                <a href={links[1]} target="_blank" className="link--semidark" style={{display: 'flex', gap: '2px'}}>
+                <a href={links[1]} target="_blank" className="link link--semidark" style={{display: 'flex', gap: '2px'}}>
                   Check contribution {linkArrow}
                 </a>
               )}
