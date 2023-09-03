@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import ArrowSVG from '../../components/svgs/Arrow';
+import blobs from '../../assets/blobs.png'
+
 
 export const HomeContainer = styled.section`
   height: 100vh;
@@ -60,7 +62,7 @@ export const ImageWrapper2 = styled.div`
     border-radius: 120px;
 
     filter: contrast(3);
-    background-image: url(/assets/blobs.png);
+    background-image: url(${blobs});
     background-repeat: no-repeat;
     background-size: contain;
     animation: 10s rotate ease-in-out infinite;
