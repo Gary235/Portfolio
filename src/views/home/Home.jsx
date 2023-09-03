@@ -1,39 +1,39 @@
-import { Arrow, Buttons, HomeContainer, ImageWrapper, Info, ProfileImage, Scroll, Titles } from "./styles";
+import Tilt from 'react-parallax-tilt';
+
+import {
+  Arrow,
+  Buttons,
+  HomeContainer,
+  ImageWrapper2,
+  Info,
+  Number,
+  Numbers,
+  ProfileImage2,
+  Scroll,
+  ShadowBorders,
+  Sign,
+  Titles
+} from "./styles";
 
 import { TitleM, TitleXL } from "../../styled-components/titles";
 import { BWButton, MulticolorButton } from "../../styled-components/buttons";
-import { BlurredGradient } from "../../styled-components/blurred-gradient";
 
 import TextGradient from "../../components/text-gradient/TextGradient";
+import profilePhoto2 from '../../assets/profile.png'
+import sign from '../../assets/sign.png'
 
 import './styles.css'
-import profilePhoto from '../../assets/profile.jpg'
-import { useEffect } from "react";
-import anime from "animejs";
+
 
 const Home = () => {
-
-  // useEffect(() => {
-  //   var objPropLogEl = document.querySelector('.holla');
-
-  //   var myObject = {
-  //     prop1: 0,
-  //     prop2: '0%'
-  //   }
-
-  //   anime({
-  //     targets: myObject,
-  //     prop1: 50,
-  //     prop2: '100%',
-  //     easing: 'linear',
-  //     round: 1,
-  //     update: function() {
-  //       objPropLogEl.innerHTML = JSON.stringify(myObject);
-  //     }
-  //   });
-  // })
-
   const goTo = (id) => document.getElementById(id).scrollIntoView()
+
+  const numbers = [
+    {val: '400k+', label: 'lines of code'},
+    {val: '999+', label: 'bugs fixed'},
+    {val: '4', label: 'languages dominated'},
+    {val: '~2', label: 'years of experience'},
+  ]
 
   return (
     <HomeContainer id="home">
@@ -48,9 +48,16 @@ const Home = () => {
           <BWButton onClick={() => goTo("contact") }>contact me</BWButton>
         </Buttons>
       </Info>
-      <ImageWrapper>
-        <ProfileImage alt="profile image" src={profilePhoto} id="profile-image" loading="eager" />
-      </ImageWrapper>
+      <Tilt perspective={500} scale={1.15} style={{position: 'relative'}}>
+        <ImageWrapper2>
+          <ProfileImage2 alt="profile image" src={profilePhoto2} id="profile-image" loading="eager" />
+          <ShadowBorders />
+        </ImageWrapper2>
+        <Sign src={sign} alt='sign' />
+      </Tilt>
+      <Numbers>
+        {numbers.map((n) => <Number key={n.label}><strong>{n.val}</strong> {n.label}</Number>)}
+      </Numbers>
       <Scroll><Arrow /></Scroll>
     </HomeContainer>
   )
