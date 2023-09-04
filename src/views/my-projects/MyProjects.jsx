@@ -4,17 +4,18 @@ import Project from "../../components/project/Project"
 
 import { MyProjectsContainer } from "./styles"
 
-import image1 from '../../assets/projects/project-1.jpg'
-import image2 from '../../assets/projects/project-2.jpg'
-import image3 from '../../assets/projects/project-3.jpg'
-import image4 from '../../assets/projects/project-4.jpg'
+import tuki from '../../assets/projects/tuki.jpg'
+import watchlog from '../../assets/projects/watchlog.jpg'
+import realtimetranslator from '../../assets/projects/rtt.jpg'
+import betteryoutube from '../../assets/projects/betteryoutube.jpg'
+import calculator from '../../assets/projects/calculator.jpg'
 
 const PROJECTS = [
   {
     id: '001',
     title: 'T.U.K.I.',
     description: 'This project is about an imitation of how a real <strong>Operating System</strong> works, consisting of 5 modules (Kernel - Memory - FileSystem - CPU - Console). It can perform instructions such as <i>CREATE_SEGMENT, F_READ, MOV_IN,</i> among others. <br/><br/> It features a memory segmentation system and a UFS (EXT2) type for the filesystem.',
-    image: image1,
+    image: tuki,
     stack: ['c', 'shell'],
     links: ['https://github.com/Gary235/tuki']
   },
@@ -22,25 +23,23 @@ const PROJECTS = [
     id: '002',
     title: 'WatchLog',
     description: "A personalized watchlist and show tracker. Seamlessly manage the shows you're currently watching with ease. Keep tabs on your favorite series, never missing a beat. <br/><br/> <strong>Stay organized, stay entertained.</strong>",
-    image: image2,
+    image: watchlog,
     stack: ['react', 'mantine', 'netlify'],
     links: ['https://github.com/Gary235/watch-log', 'https://watch-log.netlify.app/']
   },
-  /**
   {
     id: '0021',
     title: 'Real Time Translator',
-    description: "",
-    image: image2,
-    stack: ['python', ],
-    links: []
+    description: "The Real Time Translator is a personal project that offers <strong>instant text translation</strong> across multiple languages in real time. Whether you're bridging language gaps or exploring foreign content, this project has you covered. <br/><br/> It uses <i>OpenCv, Pytesseract and Tkinter.</i>",
+    image: realtimetranslator,
+    stack: ['python'],
+    links: ['https://github.com/Gary235/real-time-translator']
   },
-  */
   {
     id: '003',
     title: 'Better Youtube',
     description: 'A <strong>YouTube clone</strong> that brings the familiar experience you love. Dive into a world of videos, creators, and endless entertainment. Discover, watch, and engage just like you would on the original platform. <br/><br/> Welcome to a familiar yet exciting new space.',
-    image: image3,
+    image: betteryoutube,
     stack: ['react', 'typescript', 'netlify'],
     links: ['https://github.com/Gary235/Better-Youtube', 'https://betteryoutube.netlify.app/']
   },
@@ -48,7 +47,7 @@ const PROJECTS = [
     id: '004',
     title: 'Calculator',
     description: 'Experience effortless number crunching and mathematical convenience at your fingertips. Simplify complex calculations and enjoy a <strong>user-friendly interface</strong> that makes math a breeze. <br/><br/> Elevate your computation game with our powerful yet intuitive calculator solution.',
-    image: image4,
+    image: calculator,
     stack: ['html', 'css', 'javascript'],
     links: ['https://github.com/Gary235/Simple-Calculator', 'https://gary235.github.io/Simple-Calculator/']
   }
