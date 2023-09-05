@@ -130,8 +130,6 @@ export const Sign = styled.svg`
 
   @media screen and (max-width: 1350px) {
     width: 120px;
-    bottom: -10%;
-    right: -15%;
   }
 `;
 
