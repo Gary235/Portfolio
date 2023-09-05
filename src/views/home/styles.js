@@ -122,16 +122,16 @@ export const ShadowBorders = styled.div`
   }
 `;
 
-export const Sign = styled.img`
+export const Sign = styled.svg`
   position: absolute;
   bottom: -20%;
-  right: -30%;
+  right: -25%;
   transform: rotate(15deg);
 
   @media screen and (max-width: 1350px) {
     width: 120px;
     bottom: -10%;
-    right: -20%;
+    right: -15%;
   }
 `;
 

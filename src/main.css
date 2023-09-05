@@ -152,6 +152,12 @@ body {
   }
 }
 
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @media screen and (max-width: 400px) {
   ::-webkit-scrollbar {
     width: 10px;
