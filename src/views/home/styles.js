@@ -26,8 +26,16 @@ export const Info = styled.div`
   flex-direction: column;
   gap: 4rem;
 
+  position: relative;
+  left: -5rem;
+  opacity: 0;
+  animation: enter-horizontal ease-out 1.5s forwards;
+
   @media screen and (max-width: 1350px) {
     gap: 2rem;
+    left: 0;
+    opacity: 1;
+    animation: none;
   }
 `;
 
@@ -182,6 +190,10 @@ export const Numbers = styled.div`
   flex-direction: column;
   gap: 3rem;
 
+  position: relative;
+  left: 5rem;
+  opacity: 0;
+  animation: enter-horizontal ease-out 1.5s forwards;
 
   @media screen and (max-width: 1350px) {
     display: none;

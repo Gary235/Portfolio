@@ -30,8 +30,8 @@ const Home = () => {
   const numbers = [
     {val: '400k+', label: 'lines of code'},
     {val: '999+', label: 'bugs fixed'},
-    {val: '4', label: 'languages dominated'},
-    {val: '~3', label: 'years of experience'},
+    {val: '3', label: 'languages used'},
+    {val: '2+', label: 'years of experience'},
   ]
 
   return (

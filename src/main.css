@@ -158,6 +158,20 @@ body {
   }
 }
 
+@keyframes enter-horizontal {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes enter-vertical {
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 400px) {
   ::-webkit-scrollbar {
     width: 10px;

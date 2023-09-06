@@ -7,7 +7,7 @@ export const FooterContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `
 
 export const SocialMediaText = styled.a`

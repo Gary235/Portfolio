@@ -4,10 +4,12 @@ export const ProjectContainer = styled.article`
   display: flex;
   width: 100%;
   height: 40vh;
+  min-height: 300px;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
   position: relative;
+  margin-block: 1rem;
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
@@ -38,6 +40,7 @@ export const ProjectInfo = styled.div`
 
 export const ProjectBody = styled.p`
   color: #ffffff;
+  padding-bottom: 2rem;
 `
 
 export const ProjectImageWrapper = styled.figure`
