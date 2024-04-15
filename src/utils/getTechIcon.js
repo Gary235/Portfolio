@@ -13,9 +13,13 @@ import git from '../assets/icons/git-icon.svg'
 import flocabulary from '../assets/icons/flocabulary-icon.svg'
 import unipyme from '../assets/icons/unipyme-icon.svg'
 import codilink from '../assets/icons/codilink-icon.svg'
+import bun from '../assets/icons/bun-icon.svg'
+import tailwind from '../assets/icons/tailwind-icon.svg'
+import vercel from '../assets/icons/vercel-icon.svg'
 
 const getTechIcon = tech => {
   return {
+    bun,
     c,
     codilink,
     css,
@@ -29,8 +33,10 @@ const getTechIcon = tech => {
     python,
     react,
     shell,
+    tailwind,
     typescript,
     unipyme,
+    vercel
   }[tech] ?? '';
 }
 
