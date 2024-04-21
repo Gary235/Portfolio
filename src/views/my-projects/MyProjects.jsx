@@ -1,8 +1,10 @@
+import { useEffect, useRef, useState } from "react"
 import TextGradient from "../../components/text-gradient/TextGradient"
 import { TitleL } from "../../styled-components/titles"
-import Project from "../../components/project/Project"
+import Project, { getLinkProps } from "../../components/project/Project"
+import TechStack from "../../components/tech-stack/TechStack"
 
-import { MyProjectsContainer } from "./styles"
+import { MyProjectsContainer, ProjectModal } from "./styles"
 
 import umlcollab from '../../assets/projects/umlcollab.jpg'
 import tuki from '../../assets/projects/tuki.jpg'
@@ -10,6 +12,7 @@ import watchlog from '../../assets/projects/watchlog.jpg'
 import realtimetranslator from '../../assets/projects/rtt.jpg'
 import betteryoutube from '../../assets/projects/betteryoutube.jpg'
 import calculator from '../../assets/projects/calculator.jpg'
+import { LinkAnchor, LinkImage } from "../../components/project/styles"
 
 const PROJECTS = [
   {
@@ -57,9 +60,39 @@ const PROJECTS = [
 ]
 
 const MyProjects = () => {
+  const dialogRef = useRef(null);
+  const [projectInDialog, setProjectInDialog] = useState({});
 
-  const renderProjects = projects =>  projects.map(
-    (project, position) => <Project key={`project-${position}`} {...project} position={position} />
+  useEffect(() => {
+    const onOutsideDialogClick = (e) => {
+      const rect = dialogRef.current.getBoundingClientRect();
+      const isInDialog = (
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width
+      );
+
+      if (!isInDialog) {
+        dialogRef.current.close();
+        document.querySelector('body').classList.remove('freeze')
+      }
+    }
+
+    dialogRef.current.addEventListener('click', onOutsideDialogClick);
+    return () => dialogRef.current.removeEventListener('click', onOutsideDialogClick)
+  }, [])
+
+  const renderProjects = projects => projects.map(
+    (project, position) => (
+      <Project
+        key={`project-${position}`}
+        dialogRef={dialogRef}
+        position={position}
+        setProjectInDialog={setProjectInDialog}
+        {...project}
+      />
+    )
   )
 
   return (
@@ -67,6 +100,30 @@ const MyProjects = () => {
       <TitleL>my <TextGradient>projects</TextGradient></TitleL>
 
       {renderProjects(PROJECTS)}
+
+      <ProjectModal ref={dialogRef}>
+        <img src={projectInDialog.image} />
+        <div className="modal-body">
+          <span className="title">
+            <h3><TextGradient>{projectInDialog.title}</TextGradient></h3>
+            <TechStack stack={projectInDialog.stack} width={18} />
+          </span>
+          <div dangerouslySetInnerHTML={{ __html: projectInDialog.description }} />
+          <span className="links">
+            {projectInDialog.links?.map(link => (
+              <LinkAnchor
+                key={link}
+                href={link}
+                target="_blank"
+                aria-label={`link to ${link.includes('github.com') ? 'repository' : 'website'}`}
+                title={`go to ${link.includes('github.com') ? 'repository' : 'website'}`}
+              >
+                <LinkImage {...getLinkProps(link)} />
+              </LinkAnchor>
+            ))}
+          </span>
+        </div>
+      </ProjectModal>
     </MyProjectsContainer>
   )
 }

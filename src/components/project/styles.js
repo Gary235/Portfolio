@@ -10,6 +10,7 @@ export const ProjectContainer = styled.article`
   flex-wrap: wrap;
   position: relative;
   margin-block: 1rem;
+  cursor: unset;
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
@@ -18,6 +19,7 @@ export const ProjectContainer = styled.article`
   @media screen and (max-width: 1300px) {
     justify-content: center;
     gap: 0;
+    cursor: pointer;
   }
 `;
 

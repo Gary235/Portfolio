@@ -20,6 +20,8 @@ const linkArrow = (
 )
 
 const TechStack = ({stack, width = 24}) => {
+  if (!stack) return null;
+
   const [open, setOpen] = useState(
     stack.reduce((acc, curr) => ({...acc, [curr]: false}), {})
   );
