@@ -29,7 +29,7 @@ const AboutMe = () => {
           <IconsSection>
             <span>
               <IconsTitle>Some tech I'm used to:</IconsTitle>
-              <TechStack stack={['react', 'python', 'django', 'c', 'git']} />
+              <TechStack stack={['react', 'python', 'django', 'typescript', 'git']} />
             </span>
             <span>
               <IconsTitle>Also helped building this websites:</IconsTitle>

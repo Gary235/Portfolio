@@ -7,6 +7,7 @@ import TechStack from "../../components/tech-stack/TechStack"
 import { MyProjectsContainer, ProjectModal } from "./styles"
 
 import umlcollab from '../../assets/projects/umlcollab.jpg'
+import video2ascii from '../../assets/projects/video2ascii.jpg'
 import tuki from '../../assets/projects/tuki.jpg'
 import watchlog from '../../assets/projects/watchlog.jpg'
 import realtimetranslator from '../../assets/projects/rtt.jpg'
@@ -21,6 +22,13 @@ const PROJECTS = [
     image: umlcollab,
     stack: ['typescript', 'react', 'bun', 'tailwind', 'vercel'],
     links: ['https://github.com/Gary235/uml-collab', 'https://uml-collab-app.vercel.app/']
+  },
+  {
+    title: 'Video2ASCII',
+    description: 'Video2ASCII is an application designed to transform video streams into ASCII art <strong>in real time</strong>. This tool analyzes each frame of a video and converts it into a detailed ASCII representation, using the luminance of individual pixels to select appropriate ASCII characters. <br/><br/> <em>Bring your videos to life in a whole new dimension of art with every frame - <strong>where classic meets code.</strong></em>',
+    image: video2ascii,
+    stack: ['typescript', 'react', 'vercel'],
+    links: ['https://github.com/Gary235/video2ascii', 'https://video2ascii.vercel.app/']
   },
   {
     title: 'T.U.K.I.',
