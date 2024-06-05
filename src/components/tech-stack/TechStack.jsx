@@ -46,7 +46,7 @@ const TechStack = ({stack, width = 24}) => {
           <TechIcon alt={tech} width={width} src={getTechIcon(tech)} isProject={isProject} />
         </options.trigger>
         <options.content className={options.contentClass}>
-          <div dangerouslySetInnerHTML={{__html: getTechVerbose(tech)}} />
+          <div dangerouslySetInnerHTML={{__html: getTechVerbose(tech)}} translate={isProject ? "yes" : "no"} />
           {isProject && (
             <div style={{marginTop: '1rem', display: 'flex', gap: '1.5rem'}}>
               <a href={links[0]} target="_blank" className="link link--dark" style={{display: 'flex', gap: '2px'}}>

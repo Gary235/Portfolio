@@ -27,7 +27,7 @@ const Project = ({
 
   const renderProjectInfo = () => (
     <ProjectInfo toTheLeft={position % 2 === 0}>
-      <TitleM><TextGradient>{title}</TextGradient></TitleM>
+      <TitleM translate="no"><TextGradient>{title}</TextGradient></TitleM>
       <ProjectBody dangerouslySetInnerHTML={{ __html: description }} />
       <TechStack stack={stack} width={18} />
     </ProjectInfo>

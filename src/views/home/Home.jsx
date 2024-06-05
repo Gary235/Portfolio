@@ -26,12 +26,13 @@ import './styles.css'
 
 const Home = () => {
   const goTo = (id) => document.getElementById(id).scrollIntoView()
+  const yearsOfExperience = (Date.now() - new Date('3/6/2021')) / (1000 * 60 * 60 * 24 * 30 * 12);
 
-  const numbers = [
+  const stats = [
     {val: '400k+', label: 'lines of code'},
     {val: '999+', label: 'bugs fixed'},
-    {val: '3', label: 'languages used'},
-    {val: '2+', label: 'years of experience'},
+    {val: '3', label: 'programming languages'},
+    {val: `${yearsOfExperience.toFixed(0)}+`, label: 'years of experience'},
   ]
 
   return (
@@ -68,7 +69,7 @@ const Home = () => {
         </Sign>
       </Tilt>
       <Numbers>
-        {numbers.map((n) => <Number key={n.label}><strong>{n.val}</strong> {n.label}</Number>)}
+        {stats.map((n) => <Number key={n.label}><strong>{n.val}</strong> {n.label}</Number>)}
       </Numbers>
       <Scroll><Arrow /></Scroll>
     </HomeContainer>
